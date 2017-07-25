@@ -3,12 +3,13 @@ from numpy import recfromcsv
 
     
    
-users = recfromcsv('big5.sorted.csv', delimiter=',')
+users = recfromcsv('../../personality/big5.sorted.csv', delimiter=',')
 
 users_reduced = users[:1000]
 print users_reduced
 users_reduced.tofile('users_reduced.csv',sep=',')
-#np.savetxt('dataset.csv', users_reduced, delimiter=',')
+np.savetxt('users_reduced.csv', users_reduced, delimiter=",", fmt="%s") 
+#np.savetxt('users_reduced.csv', users_reduced, delimiter=',')
 
 
 #last_id = users[1001,0]
