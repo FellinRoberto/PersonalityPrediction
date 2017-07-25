@@ -2,7 +2,7 @@ import csv
 
 sum=[0,0,0,0,0]
 c=0
-with open('../../personality/big5.sorted.csv') as fin:
+with open('../dataset/users_reduced.csv') as fin:
     headerline = fin.next()
     total = 0
 
