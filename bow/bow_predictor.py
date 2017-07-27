@@ -17,25 +17,43 @@ bow_train = tfidf_vectorizer.fit_transform(x_train['status_update'])
 
 bow_train = bow_train.todense()
 
-np.savetxt('tfidfTrain.csv', bow_train, delimiter=',')
+#np.savetxt('tfidfTrain.csv', bow_train, delimiter=',')
 
 bow_test = tfidf_vectorizer.transform(x_test['status_update'])
 bow_test = bow_test.todense()
-np.savetxt('tfidfTest.csv', bow_test, delimiter=',')
-# tfidf_df = pd.DataFrame(tfidf.toarray())
-# tfidf_df.to_csv('tfidf.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+#np.savetxt('tfidfTest.csv', bow_test, delimiter=',')
 
-param_dist = {'objective': 'reg:linear', 'n_estimators': 2}
 
-clf = xgb.XGBRegressor(**param_dist)
+#param_dist = {'objective': 'reg:linear', 'n_estimators': 20}
+
+#clf = xgb.XGBRegressor(**param_dist)
+#clf = xgb.XGBRegressor(learning_rate = 0.1, n_estimators=1000,
+#                           max_depth=5, min_child_weight=1,
+#                           gamma=0, subsample=0.8,
+#                           colsample_bytree=0.8, objective= "reg:linear",
+#                           nthread=-1,scale_pos_weight=1, seed=27)
+
+
 
 y_train = y_train.as_matrix()
-y_train = y_train[:, 0]
 
-clf.fit(bow_train, y_train, eval_metric='logloss', verbose=True)
+n=2
 
-prediction = clf.predict(bow_test)
+
+prediction=np.empty([1, len(x_test)])
+print prediction.shape
+
+
+for x in range(0, n):
+    clf = xgb.XGBRegressor();
+    y_t = y_train[:, x]
+    clf.fit(bow_train, y_t)
+    print len(clf.predict(bow_test))
+    prediction = np.append (prediction, clf.predict(bow_test).reshipe, axis=1)
+
+prediction = np.delete(prediction, np.s_[0], axis=1)
 print prediction
 print prediction.shape
 
 np.savetxt('bowPrediction.csv', prediction, delimiter=',')
+
