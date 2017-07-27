@@ -29,4 +29,3 @@ for x in range(1, len(users)):
 
 y_pred=pd.DataFrame(y_pred)
 y_pred.to_csv('y_pred.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
-print "y_pred.csv gererated"
