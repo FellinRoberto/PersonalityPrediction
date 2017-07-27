@@ -1,35 +1,25 @@
+import pandas as pd
+import csv
 import numpy as np
-from numpy import recfromcsv
-
-    
-   
-users = recfromcsv('big5.sorted.csv', delimiter=',')
-
-users_reduced = users[:1000]
-print users_reduced
-users_reduced.tofile('users_reduced.csv',sep=',')
-#np.savetxt('dataset.csv', users_reduced, delimiter=',')
+from sklearn.model_selection import train_test_split
+from pandas import *
 
 
-#last_id = users[1001,0]
-#posts = recfromcsv('user_status.sorted.csv', delimiter=',')
+users=pd.read_csv('users_1000.csv', engine='c')
+posts=pd.read_csv('posts_1000.csv', engine='c')
 
-#numpy.savetxt("users_reduced.csv", users_reduced, delimiter=",")
+x = posts['status_update']
 
-#import csv
-#with open('big5.sorted.csv', 'rb') as csvfile:
-#	users = csv.reader(csvfile)
-#	for row in users:
-#		print row
+joined_df= pd.merge(posts, users, how='inner', on='userid')
+cleaned_df= joined_df.drop(['date_x','date_y', 'blocks', 'item_level'], axis=1)
+y = cleaned_df.drop(['userid', 'status_update'], axis=1)
 
-#import pandas as pd
-#users = pd.read_csv('big5.sorted.csv')
-#print(users.head(1000))
-#np.array_split(df, 4)
-#users_reduced = users [:,:]
-#users.head(1000).to_csv('prova')
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=94)
 
-#target = users["Label"]  #provided your csv has header row, and the label column is named "Label"
+X_train = X_train.to_frame()
+X_test = X_test.to_frame()
 
-#select all but the last column as data
-#data = mydata.ix[:,:-1]
+X_train.to_csv('X_train.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+X_test.to_csv('X_test.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+y_train.to_csv('y_train.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+y_test.to_csv('y_test.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
