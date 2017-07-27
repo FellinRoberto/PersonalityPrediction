@@ -24,7 +24,7 @@ print "prediction: ",sum
 y_pred=[]
 users=pd.read_csv('../dataset/X_test.csv', engine='c')
 
-for x in range(1, len(users)):
+for x in range(0, len(users)):
     y_pred.append (sum)
 
 y_pred=pd.DataFrame(y_pred)
