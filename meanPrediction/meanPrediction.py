@@ -3,13 +3,10 @@ from sklearn.metrics import mean_squared_error
 
 sum=[0,0,0,0,0]
 c=0
-<<<<<<< HEAD
 
 #read the input and do the sum of the parameter of all the user, output array with size 5 with the sum of the parameter
 with open('../../personality/big5.sorted2.csv') as fin:
-=======
-with open('../dataset/users_reduced.csv') as fin:
->>>>>>> 05b5b8bdd984782c369ab3a68995b2db3ece2acd
+
     headerline = fin.next()
     total = 0
 
