@@ -34,15 +34,20 @@ prediction = np.empty(shape=[len(x_test), 0])
 
 
 for x in range(0, n):
-	clf=xgb.XGBRegressor(learning_rate = 0.1, n_estimators=1000,
-                           max_depth=5, min_child_weight=1,
-                           gamma=0, subsample=0.8,
-                           colsample_bytree=0.8, objective= "reg:linear",  
-                           nthread=-1,scale_pos_weight=1, seed=27)
-	y_t = y_train[:, x]
-	clf.fit(bow_train, y_t)
-	temp =  clf.predict(bow_test)
-	prediction = np.column_stack((prediction, temp))
-	print x
+    #clf = xgb.XGBRegressor()
+#    clf=xgb.XGBRegressor(learning_rate = 0.1, n_estimators=1000,
+#                           max_depth=5, min_child_weight=1,
+#                           gamma=0, subsample=0.8,
+#                           colsample_bytree=0.8, objective= "reg:linear",
+#                           nthread=-1,scale_pos_weight=1, seed=27)
+
+
+    clf = xgb.XGBRegressor(learning_rate = 0.2, max_depth = 3)
+    y_t = y_train[:, x]
+    clf.fit(bow_train, y_t)
+    temp =  clf.predict(bow_test)
+    prediction = np.column_stack((prediction, temp))
+    print x
 
 np.savetxt('bowPrediction.csv', prediction, delimiter=',')
+print "bowPrediction.csv gererated"
