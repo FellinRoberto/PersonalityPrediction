@@ -10,7 +10,7 @@ reduced_size = 1000
 #compute and save reduced user list
 users_reduced = users[:reduced_size]
 users_reduced.to_csv('users_1000.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
-
+print "users_1000.csv generated"
 ##check if the csv was saved correctly
 #df2=pd.read_csv('../../personality/users_1000.csv',engine='c')
 #print users_reduced.equals(df2)
@@ -24,11 +24,11 @@ while i<len(posts) and posts.get_value(i, 'userid')!=last_id:
     i=i+1
     
 #i is now the index of the first post that does not belong to one of the users in the reduced list
-print i
+#print i
 
 posts_reduced = posts[:i]
 posts_reduced.to_csv('posts_1000.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
-
+print "posts_1000.csv generated"
 ##check if the csv was saved correctly
 #df3=pd.read_csv('../../personality/posts_1000.csv',engine='c')
 #print  posts_reduced.equals(df3)

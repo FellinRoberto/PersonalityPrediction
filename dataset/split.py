@@ -20,6 +20,10 @@ X_train = X_train.to_frame()
 X_test = X_test.to_frame()
 
 X_train.to_csv('X_train.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+print "X_train.csv generated"
 X_test.to_csv('X_test.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+print "X_test.csv generated"
 y_train.to_csv('y_train.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+print "y_train.csv generated"
 y_test.to_csv('y_test.csv', index=False, quoting=csv.QUOTE_NONNUMERIC, doublequote=True)
+print "y_test.csv generated"
