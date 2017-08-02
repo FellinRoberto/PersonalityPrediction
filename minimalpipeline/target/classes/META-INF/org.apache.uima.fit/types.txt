@@ -1,0 +1,15 @@
+classpath*:desc/Iyas/LdaTopicDistribution.xml
+classpath*:desc/Iyas/LdaTopic.xml
+classpath*:desc/Iyas/Lowercase.xml
+classpath*:desc/Iyas/NormalizedText.xml
+classpath*:desc/Iyas/QuestionClass.xml
+classpath*:desc/Iyas/QuestionFocus.xml
+classpath*:desc/Iyas/Discourse.xml
+classpath*:desc/Limosine/types/CorefTypeSystem.xml
+classpath*:desc/Limosine/types/EMDTypeSystem.xml
+classpath*:desc/Limosine/types/LinkingTypeSystem.xml
+classpath*:desc/Limosine/types/NERTypeSystem.xml
+classpath*:desc/Limosine/types/OpinionMiningTypeSystem.xml
+classpath*:desc/Limosine/types/ParseTreePosTypeSystem.xml
+classpath*:desc/Limosine/types/RelationExtractionTypeSystem.xml
+classpath*:desc/Limosine/types/SentenceTokenTypeSystem.xml

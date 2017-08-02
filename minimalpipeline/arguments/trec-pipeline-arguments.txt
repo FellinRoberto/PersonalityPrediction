@@ -1,0 +1,11 @@
+-trainQuestionsPath data/trec/questions-train.txt
+-trainCandidatesPath data/trec/candidates-train.txt
+-trainCasesDir CASes/trec/train/
+-trainOutputDir data/trec/train/
+-testQuestionsPath data/trec/questions-test.txt
+-testCandidatesPath data/trec/candidates-test.txt
+-testCasesDir CASes/trec/test/
+-testOutputDir data/trec/test/
+-candidatesToKeepInTrain -1
+-candidatesToKeepInTest 5
+-lang en

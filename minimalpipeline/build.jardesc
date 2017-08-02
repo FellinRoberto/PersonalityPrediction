@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="Iyas/target/iyas.jar"/>
+    <options buildIfNeeded="true" compress="false" descriptionLocation="/Iyas/build.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/Iyas/set-environment-variables.sh"/>
+        <folder path="/Iyas/desc"/>
+        <folder path="/Iyas/metadata"/>
+        <file path="/Iyas/nohup.out"/>
+        <javaElement handleIdentifier="=Iyas/target\/generated-sources\/uimafit"/>
+        <folder path="/Iyas/bin"/>
+        <folder path="/Iyas/src"/>
+        <javaElement handleIdentifier="=Iyas/src\/main\/java"/>
+        <file path="/Iyas/.project"/>
+        <folder path="/Iyas/conf"/>
+        <javaElement handleIdentifier="=Iyas/src\/main\/resources"/>
+        <file path="/Iyas/.classpath"/>
+        <file path="/Iyas/.gitignore"/>
+        <folder path="/Iyas/.settings"/>
+        <file path="/Iyas/bart.log"/>
+        <javaElement handleIdentifier="=Iyas/src\/test\/java"/>
+        <file path="/Iyas/pom.xml"/>
+        <file path="/Iyas/README.md"/>
+        <javaElement handleIdentifier="=Iyas/src\/test\/resources"/>
+        <folder path="/Iyas/arguments"/>
+    </selectedElements>
+</jardesc>
