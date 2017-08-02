@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>true</primitive>
+    <annotatorImplementationName>qa.qcri.qf.chunker.ConstituencyTreeChunker</annotatorImplementationName>
+    <analysisEngineMetaData>
+        <name>qa.qcri.qf.chunker.ConstituencyTreeChunker</name>
+        <description>Constituency Tree Chunker.
+
+1) you put &lt;top&gt; on level 1
+2) you put all the leaves on level 3
+3) in the original tree, for each  leaf L:
+--you go one level up to get its parent node.
+if all the children of this parent node are leaves, you put this
+parent node on level 2 of the chunk tree, you link it to the &lt;top&gt; and
+link each child to it.
+else (== if the parent node has at least one non-leaf child), you
+create an artificial node, duplicating the pos-tag of L. You put the
+artificial node on level 2, link it to the top and link L to it.
+
+=======
+
+example: (S (NP (A x) (NP (B y) (C z))))
+
+this should generate
+
+(TOP (A (A x)) (NP (B y) (C z)))</description>
+        <version>0.0.1-SNAPSHOT</version>
+        <vendor>DKPro Core Project</vendor>
+        <copyright>Copyright 2010
+							Ubiquitous Knowledge Processing	(UKP) Lab
+							Technische Universität Darmstadt</copyright>
+        <configurationParameters/>
+        <configurationParameterSettings/>
+        <typeSystemDescription/>
+        <typePriorities/>
+        <fsIndexCollection/>
+        <capabilities>
+            <capability>
+                <inputs>
+                    <type>de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS</type>
+                    <type>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</type>
+                    <type>de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</type>
+                </inputs>
+                <outputs>
+                    <type>de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk</type>
+                </outputs>
+                <languagesSupported/>
+            </capability>
+        </capabilities>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+            <outputsNewCASes>false</outputsNewCASes>
+        </operationalProperties>
+    </analysisEngineMetaData>
+</analysisEngineDescription>

@@ -1,0 +1,59 @@
+//package IBM.ml.svm;
+import java.io.*;
+import java.util.*;
+
+class SVMLightTK
+{
+    static {
+	System.load("/home/noname/nlpir/SVM-Light-TK-1.5.Lib/svmlight_tk.so");
+    }
+    final private int modelHandle;
+ 
+    public SVMLightTK(String modelFile)
+    {
+	modelHandle=load_model(modelFile);
+    }
+    
+    public double classify(String instance)
+    {
+	return classify_instance(modelHandle, instance);
+    }
+
+    private static native int load_model(String modelFile);
+    private static native double classify_instance(int modelNumber, String instance);
+    public static void main(String[] args)
+    {
+        System.out.println("loading models\n");
+	String test_input="-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN abbreviation))(PP (IN for)(NP (NNP Texas))))(. ?))) |ET|";
+	SVMLightTK[] models=new SVMLightTK[3];
+	models[0]=new SVMLightTK("/home/noname/lib/apache-uima/examples/nlpir/qclassifier/models/LOC.model");
+        System.out.println("loaded\n");	
+	
+	String line;
+        try
+        {    
+            BufferedReader in = new BufferedReader(new FileReader("/home/noname/lib/apache-uima/examples/nlpir/qclassifier/LOC_test.dat"));
+
+            if (!in.ready())
+                throw new IOException();
+
+            while ((line = in.readLine()) != null)
+                	System.out.println("SCORE model: "+
+			      models[0].classify(line));
+            in.close();
+        }
+		
+        catch (IOException e)
+        {
+            System.out.println(e);
+        }
+	
+/*
+	for(int i=0;i<3;i++){
+	    System.out.println("SCORE model "+i+": "+
+			      models[i].classify(test_input));
+	}
+*/
+
+    }
+}
