@@ -1,6 +1,0 @@
-Class: qa.qcri.qf.annotators.IllinoisChunker
-  No meta data [description] found
-
-Class: qa.qcri.qf.annotators.WhitespaceTokenizer
-  No meta data [description] found
-
