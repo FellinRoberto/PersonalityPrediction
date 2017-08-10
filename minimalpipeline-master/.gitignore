@@ -1,0 +1,10 @@
+/target/
+/target/
+/target/
+
+/data/trec-en/folds/
+/data/trec-en/train/
+/data/trec-en/test/
+/data/mengqui/
+/CASes/
+/tools/SVM-Light-1.5-rer/*.o
