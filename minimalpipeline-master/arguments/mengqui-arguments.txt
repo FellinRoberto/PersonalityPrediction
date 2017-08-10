@@ -1,0 +1,10 @@
+-trainQuestionsPath data/mengqui/train2393.num-recovered.questions.txt
+-trainCandidatesPath data/mengqui/train2393.num-recovered.txt
+-trainCasesDir CASes/mengqui/train/
+-trainOutputDir data/mengqui/train/
+-testQuestionsPath data/mengqui/test-less-than-40.num-recovered.questions.txt
+-testCandidatesPath data/mengqui/test-less-than-40.num-recovered.txt
+-testCasesDir CASes/mengqui/test/
+-testOutputDir data/mengqui/test/
+-candidatesToKeepInTrain 10
+-candidatesToKeepInTest -1

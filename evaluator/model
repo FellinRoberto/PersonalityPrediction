@@ -1,0 +1,38 @@
+SVM-light Version V5.01-TK-1.4.3_smoothing
+5 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+0.4 # kernel parameter -L 
+1 # kernel parameter -T 
+T # kernel parameter -C 
+1 # kernel parameter -F 
+1 # kernel parameter -S 
+0.400000 # kernel parameter -M 
+3 # kernel parameter -N 
+S # kernel parameter -V 
+S # kernel parameter -W 
+ # kernel parameter -G 
+1.000000 # similarity threshold -H 
+1.000000 # terminal factor -X 
+empty # matrix path -P 
+empty # cache path -Z 
+1000000 # cache size -A 
+10000000 # cache max size -B 
+0.500000 # refresh factor -D 
+10 # highest feature index 
+20 # number of training documents 
+11 # number of support vectors plus 1 
+-3.2443305 # threshold b, each following line is a SV (starting with alpha*y)
+-1.2345679012345678327022824305459  |BT| (ROOT (S (NP (VB (fight))(NN (terror)))(VP (TO (to))(VB (defend)))(NP (NN (freedom)))(SBAR (IN (so)))(NP (PRP (you)))(VP (MD (can))(VB (buy)))(NP (JJR (more))(NN (stuff))))) |ET| 
+-0.9079104790499241683932041269145  |BT| (ROOT (S (NP (JJS (best))(NN (day)))(ADVP (RB (ever))))(S (NP (VBP (:d))))) |ET| 
+-0.7482894107493412994003278981836  |BT| (ROOT (S (NP (PRP (i)))(VP (VBP (wish)))(NP (FW (i)))(VP (MD (could))(VB (have)))(NP (DT (this))(NN (moment)))(PP (IN (for)))(NP (NN (life)))(PP (IN (for)))(NP (NN (life)))(PP (IN (for)))(NP (NN (life))))(S (NP (VB (cause)))(PP (IN (in)))(NP (DT (this))(NN (moment)))(NP (PRP (i)))(VP (VBP (feel)))(ADJP (RB (so))(JJ (alive))))) |ET| 
+-0.72331454945165840619836217229022  |BT| (ROOT (S (NP (JJ (long))(NN (hair))))(S (NP (-LRB- (-lrb-))(NNP (wacha))))(S (NP (NNP (d))))) |ET| 
+-0.39175045118884238570799993794935  |BT| (ROOT (S (VP (VBD (get)))(PP (TO (to)))(NP (VB (be)))(ADJP (JJ (pregnant)))(PP (IN (for)))(PP (IN (like)))(NP (DT (a))(NN (hour)))(NP (NN (today)))(NP (PRP (it)))(VP (VBD (be)))(ADJP (JJ (great))))) |ET| 
+1.2345679012345678327022824305459  |BT| (ROOT (S (NP (VBZ (starbuck)))(PP (IN (with)))(NP (NN (mrka)))(NP (NN (tomorrow))))(S (ADJP (JJ (ready)))(PP (IN (for)))(NP (DT (a))(NN (vanillabean))))) |ET| 
+0.8997906430794393450867119099712  |BT| (ROOT (S (VP (FW (i))(NN (love)))(NP (FW (me)))(NP (NN (ale)))(NP (NN (christa)))(NP (POS ('s))(NN (spot)))(PP (IN (in)))(NP (DT (the))(NN (locker))(NN (room)))(ADVP (VBD (;}))(JJS (best)))(PP (IN (of)))(NP (NNS (time)))(VP (VB (happen)))(ADVP (RB (there))))) |ET| 
+0.40916362442475029403965436358703  |BT| (ROOT (S (NP (NNP (woooooowwww))(VBD (.....))))(S (NP (NNP (really))(NNP (really))(NNP (we))(NNP (doing))(NNP (it))(NNP (like))(NNP (that))(NNP (lol))(VBD (.....))))(S (NP (NNP (okay))))) |ET| 
+0.22775039125811033513535619476897  |BT| (ROOT (S (NP (NNP (t.g.i.f))))) |ET| 
+1.2345679012345678327022824305459  |BT| (ROOT) |ET| 

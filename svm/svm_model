@@ -1,0 +1,317 @@
+SVM-light Version V5.01-TK-1.4.3_smoothing
+5 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+0.4 # kernel parameter -L 
+1 # kernel parameter -T 
+T # kernel parameter -C 
+5 # kernel parameter -F 
+1 # kernel parameter -S 
+0.400000 # kernel parameter -M 
+3 # kernel parameter -N 
+S # kernel parameter -V 
+S # kernel parameter -W 
+ # kernel parameter -G 
+0.500000 # similarity threshold -H 
+1.000000 # terminal factor -X 
+empty # matrix path -P 
+empty # cache path -Z 
+0 # cache size -A 
+10000000 # cache max size -B 
+0.500000 # refresh factor -D 
+10 # highest feature index 
+5438 # number of training documents 
+290 # number of support vectors plus 1 
+1.5678665 # threshold b, each following line is a SV (starting with alpha*y)
+0.92127942343201596475665837715496  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (shield::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.69472952016195366198303418059368  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (jane::n))(NNP (goodall::n)))(VP (VBN (know::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (abbreviation::n)))(ADVP (RB (ioc::j)))(VP (VB (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.54390439425788827954022508492926  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NP (DT (the::d))(RB (only::r))(VBN (repeal::v))(NN (amendment::n)))(PP (TO (to::t))(NP (DT (the::d))(NNP (u.s.::n))(NNP (constitution::n)))))(VP (VBP (deal::n))(PP (IN (with::i)))))(. (?::.)))) |ET| 
+-0.79491840325754137275282573682489  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (PRP (e=mc2::r)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (full::j))(NN (form::n)))(PP (IN (of::i))(NP (NN (.com::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(JJ (abbreviation::n))(NNP (aids::n)))(VP (VBP (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (inri::n)))(VP (VB (stand::v))(PP (IN (for::i)))(SBAR (WHADVP (WRB (when::w)))(S (VP (VBN (use::v))(PP (IN (on::i))(NP (NP (NNP (jesus::n))(POS ('::p)))(NN (crosslet::n)))))))))(. (?::.)))) |ET| 
+0.92127942343199265007314124886761  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (s.o.s.::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (S (NP (NNP (cnn::n)))(VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (for::i))(WHNP (WP (what::w))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(VP (VBZ (tonsil::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (corporation::n)))(SQ (AUX (do::v))(NP (NNP (madonna::n)))(VP (VBP (advertise::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (correct::j))(NN (way::n)))(SBAR (S (VP (TO (to::t))(VP (VB (abbreviate::v))(NP (NNS (cc.::n)))(PP (IN (at::i))(NP (NP (DT (the::d))(NN (bottom::n)))(PP (IN (of::i))(NP (DT (a::d))(NN (business::n))(NN (letter::n)))))))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (of::i))(NP (NP (DT (the::d))(NN (company::n))(NN (name::n)))(`` (`::`))(NP (NNP (general::n))(NNPS (motors::n)))('' ('::p)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (acronym::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NN (rating::n))(NN (system::n)))(PP (IN (for::i))(NP (NN (air::n))(NN (conditioner::n))(NN (efficiency::n)))))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (corporation::n)))(SQ (AUX (do::v))(NP (NNP (madonna::n)))(VP (VBP (advertise::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.85617931567267024917100570746697  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (nickname::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NN (state::n)))(PP (IN (of::i))(NP (NNP (mississippi::n)))))))))(. (?::.)))) |ET| 
+-0.57792597802343170787509052388486  |BT| (S1 (SBARQ (WHNP (WP (who::w)))(SQ (AUX (do::v))(NP (NNP (dita::n))(NNP (beard::n)))(VP (VB (work::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (baffin::n))(, (,::,))(NNP (frobisher::n))(CC (and::c))(NNP (franklin::n)))(VP (VBG (look::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(VP (VB (sap::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (necrosis::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (lol::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.56198967093879481637941353255883  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (elysium::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(VBN (abbreviate::v))(NN (form::n)))(PP (IN (of::i))(NP (NP (DT (the::d))(NNP (national::n))(NNP (bureau::n)))(PP (IN (of::i))(NP (NNP (investigation::n)))))))))(. (?::.)))) |ET| 
+-0.56198967093880547452044993406162  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (tiffany::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.56198967093879481637941353255883  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (aaron::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (of::i))(NP (NP (DT (the::d))(NNP (national::n))(NNP (bureau::n)))(PP (IN (of::i))(NP (NNP (investigation::n)))))))))(. (?::.)))) |ET| 
+-0.56198967093877172374050132930279  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (ouija::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.56134104940080398193913424620405  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (verdandi::r)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.56198967093878415823837713105604  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (melissa::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNS (letter::n)))(ADVP (RB (ce::n)))(VP (VB (stand::n))(PP (IN (for::i)))(PP (IN (on::i))(NP (NP (ADJP (RB (so::r))(JJ (many::j)))(NNS (product::n)))(, (,::,))(ADJP (RB (particularly::r))(JJ (electrical::j)))(, (,::,))(VP (VBN (purchase::v))(ADVP (RB (now::r))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNS (letter::n)))(VP (VB (zip::n))(VP (VB (stand::n))(PP (IN (for::i)))(PP (IN (in::i))(NP (NP (DT (the::d))(NN (phrase::n)))(`` (``::`))(NP (`` (``::`))(NN (zip::n))(NN (code::n))('' (''::')))('' (''::')))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (SBAR (WHADVP (WRB (when::w)))(S (VP (VBG (read::v))(NP (JJ (classified::j))(NNS (ad::n))))))(, (,::,))(WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (eenty::n))(: (::::))(JJ (other::j)))(VP (VBP (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.15119561778640575044896365852765  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (collective::j))(NN (noun::n)))(PP (IN (for::i))(NP (NN (goose::n)))))))(. (?::.)))) |ET| 
+0.90649032222782610634936872884282  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (bud::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (telephone::n))(NN (number::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NNP (university::n)))(PP (IN (of::i))(NP (NNP (kentucky::n)))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (jessica::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (btu::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (rcd::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (abbreviate::v))(NN (expression::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NNP (national::n))(NNP (bureau::n)))(PP (IN (of::i))(NP (NNP (investigation::n)))))))))(. (?::.)))) |ET| 
+-0.39453876867582360343789105172618  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NNP (taj::n))(NNP (majal::n)))(VP (VBN (make::v))(PP (IN (of::i))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (previous::j))(NN (name::n)))(PP (IN (for::i))(NP (DT (the::d))(NNP (commonwealth::n)))))))(. (?::.)))) |ET| 
+-0.87525055136400986555145209422335  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (nicholas::n))(NNP (cage::n)))(VP (AUX (do::v))(PP (IN (for::i))(NP (DT (a::d))(NN (living::n))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (a::d))(`` (``::`))(INTJ (`` (``::`))(UH (usb::n))('' (''::')))('' (''::'))(NN (port::n)))(PP (IN (on::i))(NP (DT (a::d))(NN (computer::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (full::j))(NN (name::n)))(PP (IN (of::i))(NP (DT (the::d))(NNP (plo::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (nn::n)))(VP (VBG (o::n))(`` (``::`))(S (`` (``::`))(VP (VBP (mean::v))(SBAR (WHADVP (WRB (when::w)))(S (VP (VBN (use::v))(PP (IN (as::i))(NP (DT (a::d))(NN (prefix::n))))(PP (IN (in::i))(NP (JJ (irish::j))(NNS (surname::n)))))))))))(. (?::.)))) |ET| 
+-0.1007209843990258257839798261557  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(CD (7::c))(NNS (principle::n)))(PP (IN (of::i))(S (VP (VBG (learn::v))(PP (IN (from::i))(NP (NP (DT (the::d))(NNP (institute::n)))(PP (IN (for::i))(NP (NNP (research::n))))(PP (IN (on::i))(NP (NP (NNP (learning::n)))(, (,::,))(NP (NNP (irl::n)))))))))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WHNP (WP (what::w)))(NP (NNP (cruise::n))(NNP (line::n))))(SQ (AUX (do::v))(NP (NNP (kathie::n))(NNP (lee::n))(NNP (gifford::n)))(VP (VBP (advertise::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.29645075210915106111997374682687  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (MD (should::m))(NP (DT (the::d))(NN (oven::n)))(VP (AUX (be::v))(VP (VBN (set::v))(PP (IN (at::i)))(PP (IN (for::i))(S (VP (VBG (bake::v))(NP (NNP (peachy::n))(NNP (oat::n))(NNPS (muffins::n)))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (bph::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (afs::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (deet::n))))(. (?::.)))) |ET| 
+-0.044500251349706254622162759915227  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (ethology::n))))(. (?::.)))) |ET| 
+-0.044500251349708586090514472743962  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (titanium::n))))(. (?::.)))) |ET| 
+-0.044500251349709474268934172869194  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (gymnophobia::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNS (letter::n))(NNP (d.c.::n)))(VP (VBP (stand::n))(PP (IN (for::i)))(PP (IN (in::i))(NP (NP (NNP (washington::n)))(, (,::,))(NP (NNP (d.c.::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (t.s.::n)))(VP (VBP (stand::n))(PP (IN (for::i)))(PP (IN (in::i))(NP (NP (NNP (t.s.::n))(NNP (eliot::n))(POS ('s::p)))(NN (name::n))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (r.e.m.::n)))(VP (VBP (stand::v))(PP (IN (for::i)))(, (,::,))(PP (IN (as::i))(PP (IN (in::i))(NP (DT (the::d))(NN (rock::n))(NN (group::n))(NNP (r.e.m.::n)))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NP (DT (the::d))(JJ (red-and-white::j))(NNS (stripe::n)))(PP (IN (on::i))(NP (DT (a::d))(JJ (barbershop::n))(NN (pole::n)))))(VP (VBP (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (river::n))(NNP (seine::n)))(VP (VBP (empty::j))(PP (IN (into::i)))))(. (?::.)))) |ET| 
+-0.056301154660886698621879986603744  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (mr.::n))(NNP (magoo::n)))(VP (VB (flog::v))(PP (IN (on::i))(NP (NNP (tv::n))))(PP (IN (for::i))(NP (NNP (general::n))(NNP (electric::n))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (PRP (dtmf::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (PRP (hdlc::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (html::n))))(. (?::.)))) |ET| 
+-0.64842070510506033542696968652308  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (PRP (amezaiku::v))))(. (?::.)))) |ET| 
+-0.39465555092826676286676956806332  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (olestra::n))))(. (?::.)))) |ET| 
+-0.39465555092827031558044836856425  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (spumante::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (word::n))(NN (laser::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (acronym::n)))(ADVP (RB (cpr::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (`` (``::`))(NP (`` (``::`))(NNP (b.y.o.b.::n))('' (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.43220498579444621700673678788007  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (hungarian::j))(NN (word::n)))(PP (IN (for::i))(NP (NN (pepper::n)))))))(. (?::.)))) |ET| 
+-0.048093613577904648082039784640074  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (name::n))(`` (``::`))(NX (`` (``::`))(NX (NNP (justin::n)))('' (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.048093613577879779086288181133568  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (name::n))(`` (``::`))(NX (`` (``::`))(NX (NNP (anthony::n)))('' (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (svhs::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (lmds::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (dsl::n))))(. (?::.)))) |ET| 
+-0.39465555092827209193728776881471  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (plc::n))))(. (?::.)))) |ET| 
+-0.39534014643466974803232005797327  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (god::n))))(. (?::.)))) |ET| 
+-0.39465555092826321015309076756239  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (tetrinet::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(`` (``::`))(NP (`` (``::`))(JJ (blue::j))(NN (ribbon::n))('' (''::')))('' (''::')))(VP (VBP (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(`` (``::`))(`` (``::`))(NX (NNP (c::j))(POS (''::')))('' (''::')))(VP (VBP (stand::n))(PP (IN (for::i)))(PP (IN (in::i))(NP (DT (the::d))(NN (equation::n))(NNP (e=mc2::c))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (number::n))(S (`` (``::`))(NP (`` (``::`))(CD (5::c))('' (''::')))('' (''::'))))(VP (VBP (stand::n))(PP (IN (for::i)))(PP (IN (on::i))(NP (NNP (fubu::n))(NN (clothing::n))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (double-o::n)))(VP (VBP (indicate::v))(PP (IN (in::i))(NP (CD (007::c))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(`` (``::`))(NP (`` (``::`))(NP (DT (the::d))(NN (computer::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NN (rest::n)))(PP (IN (of::i))(NP (PRP (us::p))))))('' (''::')))('' (''::'))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d)))(VP (VBP (dot::n))(PP (IN (on::i))(NP (NP (DT (the::d))(NN (letter::n)))(SBAR (S (NP (PRP (i::p)))(VP (VBP (mean::v)))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (NNP (mikhail::n))(NNP (gorbachev::n))(POS ('s::p)))(JJ (middle::j))(NN (initial::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (of::i))(NP (DT (the::d))(NNP (international::n))(NNP (olympic::n))(NNP (committee::n))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (of::i))(NP (NNP (general::n))(NNPS (motors::n))))))(. (?::.)))) |ET| 
+-0.17697944022335593272643450291071  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (airport::n))(NN (code::n)))(PP (IN (for::i))(NP (NNP (los::n))(NNP (angeles::n))(NNP (international::n))))))(. (?::.)))) |ET| 
+-0.68389395327877666730387318239082  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (d.b.::n))(NNP (cooper::n)))(VP (VBN (know::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.0087649707777930352392559143481776  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (NNP (michelangelo::n))(NP (NN (sculpture::n)))(VP (AUX (be::v))(PP (IN (in::i))(NP (NP (NP (NNP (saint::n))(NNP (peter::n))(POS ('s::p)))(NNP (cathedral::n)))(, (,::,))(NP (NNP (basilica::n)))(, (,::,))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (abbreviation::n)))(VP (VBG (cwt.::n))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (PP (IN (in::i))(NP (DT (a::d))(NN (computer::n))))(, (,::,))(WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (scsi::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(VP (VBG (ioc::r))(NP (NP (DT (an::d))(NN (abbreviation::n)))(PP (IN (of::i))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (laser::n)))(VP (VB (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (hazmat::r)))(VP (VB (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (an::d))(NN (echidna::n)))(VP (VBP (look::n))(PP (IN (like::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (S (NP (NNP (cnn::n)))(VP (AUX (be::v))(NP (NP (DT (an::d))(NN (acronym::n)))(PP (IN (for::i))(WHNP (WP (what::w))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (abbreviate::v))(NN (term::n)))(VP (VBN (use::v))(PP (IN (for::i))(NP (NP (DT (the::d))(NNP (national::n))(NNP (bureau::n)))(PP (IN (of::i))(NP (NNP (investigation::n))))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (ms.::n))(, (,::,))(NNP (miss::n))(, (,::,))(CC (and::c))(NNP (mrs.::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.3402867452330719522102242535766  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (name::n))(`` (`::`))(NNP (alexandra::n))('' ('::')))(VP (VB (mean::n))))(. (?::.)))) |ET| 
+-0.09998145846595174468518507637782  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (DT (the::d))(NN (world::n))(NN (population::n)))(PP (IN (as::i))(PP (IN (of::i))(NP (NN (today::n))))))(. (?::.)))) |ET| 
+-0.23922447646312938740464915099437  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNPS (mormon::n)))(VP (VB (believe::v))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (snafu::n)))(VP (VB (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (ph::n)))(VP (VB (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.71109481675127139688186161947669  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (PRP (e.g.::r)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (FW (saliva::n)))(VP (VBP (consist::v))(PP (IN (of::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w))(RB (exactly::r)))(, (,::,))(RB (specifically::r))(SQ (AUX (do::v))(NP (NN (sleep::v)))(VP (AUX (do::v))(PP (IN (for::i))(NP (PRP (you::p))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (ribavirin::r)))(VP (VB (consist::v))(PP (IN (of::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (for::i))(NP (NNP (original::n))(NNP (equipment::n))(NNP (manufacturer::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (acronym::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NNP (national::n))(NNP (bureau::n)))(PP (IN (of::i))(NP (NNP (investigation::n)))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (ram::n)))(PP (IN (in::i))(NP (DT (the::d))(NN (computer::n)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (alphabet::n)))(PP (IN (for::i))(NP (NNP (latin::n)))))))(. (?::.)))) |ET| 
+-0.71651623567816402626817762211431  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (website::n)))(PP (IN (for::i))(NP (DT (the::d))(NNP (usa::n))(NN (journal::n)))))))(. (?::.)))) |ET| 
+-0.97874367946591878109074968961067  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (recipe::n)))(PP (IN (for::i))(NP (NNP (eggs::n))(NNP (benedict::n)))))))(. (?::.)))) |ET| 
+0.70528258803128174303509467790718  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (PRP (ekg::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.033140311222117503631157120480566  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (leukemia::j))))(. (?::.)))) |ET| 
+0.85323786307108950843769434868591  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNPS (sids::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w))(RB (else::r)))(SQ (AUX (have::v))(NP (DT (the::d))(NNS (swastika::n)))(VP (VBN (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (S (NP (NNP (hazmat::n)))(VP (VBZ (stand::v))(PP (IN (for::i))(WHNP (WP (what::w)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (who::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (seven::n))(NNPS (mules::n)))(VP (VB (block::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (for::i))(NP (JJ (limited::j))(NN (partnership::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (for::i))(NP (NN (trinitrotoluene::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (for::i))(NP (NNP (micro::n)))))))(. (?::.)))) |ET| 
+-0.046137846271708693457469507848145  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNS (economist::n)))(VP (AUX (do::v))))(. (?::.)))) |ET| 
+-0.066532199730880911547892253565806  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (another::d))(NN (word::n)))(PP (IN (for::i))(NP (NN (diet::n)))))))(. (?::.)))) |ET| 
+-0.29630019143463748321210005087778  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (another::d))(NN (name::n)))(PP (IN (for::i))(NP (NN (aspartame::n)))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (e::n)))(VP (VBP (stand::n))(PP (IN (for::i)))(PP (IN (in::i))(NP (DT (the::d))(NN (equation::n))(NNP (e=mc2::c))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NN (channel::n))(NNP (espn::n)))(VP (VBP (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (`` (`::`))(NNP (psi::n))('' ('::')))(VP (VBP (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (government::n))(NN (department::n)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (untouchables::n)))(VP (VBP (work::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (store::n)))(SQ (AUX (do::v))(NP (NNP (martha::n))(NNP (stewart::n)))(VP (VBP (advertise::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WRB (how::w))(JJ (much::r)))(SQ (AUX (do::v))(NP (DT (the::d))(JJ (first::j))(NNP (barbie::n))(NN (doll::n)))(VP (VBP (sell::n))(PP (IN (for::i)))(PP (IN (in::i))(NP (CD (1959::c))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (S (NP (NNP (cpr::n)))(VP (AUX (be::v))(NP (NP (DT (the::d))(NN (abbreviation::n)))(PP (IN (for::i))(WHNP (WP (what::w))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (RB (p.m.::r))(DT (an::d))(NN (abbreviation::n))(SBAR (IN (for::i))(, (,::,))(PP (IN (as::i))(PP (IN (in::i))(NP (CD (5::c))(NN (p.m.::n))))))))(. (?::.)))) |ET| 
+-0.21050320260358001966949359484715  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (location::n)))(PP (IN (of::i))(NP (NP (NNP (edinburgh::n)))(, (,::,))(NP (NNP (scotland::n)))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (temperature::n)))(PP (IN (for::i))(NP (NN (cook::v))))))(. (?::.)))) |ET| 
+-0.032887135163136960169794065222959  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (infomatics::n))))(. (?::.)))) |ET| 
+0.90187766399476032574966666288674  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (nasdaq::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.90130995843414218882116983877495  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (g.m.t.::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.90130995843420436131054884754121  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (nafta::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (shostakovich::n)))(VP (VB (write::v))(PP (IN (for::i))(NP (NNP (rostropovich::n))))))(. (?::.)))) |ET| 
+-0.99424520480965039581633391208015  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (al::n))(NNP (capone::n)))(ADVP (RB (finally::r)))(VP (VBN (imprison::v))(PP (IN (for::i)))(, (,::,))(PP (IN (in::i))(NP (CD (1931::c))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (a::d))(NN (dipsomaniac::n)))(VP (VBP (crave::v))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (JJ (japanese::j))(NN (school::n))(NNS (uniform::n)))(VP (VBP (look::v))(PP (IN (like::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (PRP (you::p)))(VP (VBP (call::v))(NP (NP (DT (a::d))(NN (group::n)))(PP (IN (of::i))(NP (NN (goose::n)))))))(. (?::.)))) |ET| 
+0.90132362416310218833359613199718  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (ibm::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.90132362416303912766579742310569  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (u.s.s.r.::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.90187766399482427459588507190347  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (ioc::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.81310088046208806034087501757313  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (final::n))(NNP (four::n)))(VP (VBP (refer::v))(PP (TO (to::t)))(PP (IN (in::i))(NP (DT (the::d))(NNS (sport::n))(NN (world::n))))))(. (?::.)))) |ET| 
+-0.80037631514443297042760150361573  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (war::n)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (wanna-go-home::n))(NNS (riots::n)))(VP (VBP (occur::v))(PP (IN (after::i)))))(. (?::.)))) |ET| 
+-0.63394732429179567745336498774122  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (JJ (hasidic::j))(NNPS (jew::n)))(VP (VB (refrain::v))(PP (IN (from::i)))(SBAR (IN (while::i))(S (VP (VBG (date::v)))))))(. (?::.)))) |ET| 
+-0.1498914579130710689192085283139  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (PRP (he::p)))(VP (VBG (do::v))(ADVP (RB (now::r)))))(. (?::.)))) |ET| 
+-0.44169890285311547151181343906501  |BT| (S1 (S (NP (NNP (colin::n))(NNP (powell::n)))(VP (AUX (be::v))(ADJP (JJ (famous::j)))(PP (IN (for::i))(WHNP (WP (what::w)))))(. (?::.)))) |ET| 
+-0.71690335448702136034171417122707  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (DT (the::d))(NNP (scotch::n))(`` (``::`))(`` (``::`))(PP (IN (for::i))(NP (NP (NNS (people::n)))(SBAR (WHNP (WP (who::w)))(S (VP (VBP (know::v))(NP (DT (the::d))(NN (difference::n)))('' (''::')))))))('' (''::'))))(. (?::.)))) |ET| 
+0.90130995843418126867163664428517  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (msg::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.90132362416306044394787022611126  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (vcr::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.9013863244135185137650978504098  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (nasa::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.15342483440959231444367105723359  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (MD (should::m))(NP (PRP (you::p)))(VP (AUX (do::v))(PP (IN (for::i))(NP (DT (an::d))(JJ (ankle::n))(NN (sprain::n))))))(. (?::.)))) |ET| 
+-0.89325852875335653990873652219307  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (count::n)))(SQ (AUX (do::v))(NP (NNP (alexandre::n))(NNP (dumas::n)))(VP (VBP (write::v))(PP (IN (about::i)))))(. (?::.)))) |ET| 
+-0.87581713136388916751684519113041  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (larry::n))(NNP (king::n)))(VP (AUX (do::v))(PP (IN (for::i))(NP (DT (a::d))(NN (living::n))))))(. (?::.)))) |ET| 
+-0.16041339152347461327607902603631  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(PP (IN (after::i))(NP (NN (death::n)))))(. (?::.)))) |ET| 
+-0.47769784261824005389129865761788  |BT| (S1 (SBARQ (WHNP (WDT (what::w))(NNS (attorney::n)))(SQ (VP (VB (work::v))(PP (IN (for::i))(NP (NP (DT (the::d))(NNP (center::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NNP (defense::n)))(PP (IN (of::i))(NP (NNP (free::n))(NNPS (enterprise::n))))))))))(. (?::.)))) |ET| 
+-0.95855313111340667564519435472903  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NP (DT (the::d))(NNP (statue::n)))(PP (IN (of::i))(NP (NNP (liberty::n)))))(VP (VBP (wear::n))(PP (IN (on::i))(NP (PRP$ (her::p))(NNS (foot::n))))))(. (?::.)))) |ET| 
+0.90187766399480651102749106939882  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (hiv::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.90187766399480118195697286864743  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (iq::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(VP (VBP (swap::n))(NP (NN (math::n)))))(. (?::.)))) |ET| 
+-0.4855642073010851822445488323865  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(`` (`::`))(NP (NP (JJ (last::j))(NN (chance::n)))(PP (IN (for::i))(NP (NNPS (animals::n)))))('' ('::p))))(. (?::.)))) |ET| 
+-0.6373674282769499210843378023128  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(JJ (greek::j))(NN (word::n))(NN (polis::n)))(VP (VB (mean::n))(, (,::,))(PP (IN (as::i))(PP (IN (in::i))(NP (NNP (minneapolis::n)))))))(. (?::.)))) |ET| 
+-0.46197517153460787575625090539688  |BT| (S1 (S (NP (JJ (independent::j))(JJ (silversmith::n))(POS ('s::p)))(VP (VBP (account::n))(PP (IN (for::i))(NP (NP (WP (what::w))(NN (percentage::n)))(PP (IN (of::i))(NP (JJ (silver::n))(NN (production::n)))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (`` (``::`))(NP (`` (``::`))(NNP (janelle::n))('' (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.48397613762870594911191801656969  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (georgetown::n))(`` (``::`))(`` (``::`))(NP (NNP (hoya::n))(POS (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.38411646066358096085480156034464  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (JJ (simple::n))(NNP (simon::n)))(S (VP (VBG (fishing::n))(PP (IN (for::i)))(PP (IN (in::i))(NP (NP (PRP$ (his::p))(NN (mother::n))(POS ('s::p)))(NN (pail::n))))))))(. (?::.)))) |ET| 
+-0.24989004912739887220851642268826  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (DT (those::d))(JJ (little::j))(JJ (blue::j))(NNS (reflector::n)))(PP (IN (in::i))(NP (NP (DT (the::d))(NN (middle::n)))(PP (IN (of::i))(NP (DT (the::d))(NN (road::n))))))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.7566541693486139585900218662573  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (VBZ (isps::n))(S (VP (VBP (exist::v))(PP (IN (in::i))(NP (DT (the::d))(NNP (caribbean::n))))))))(. (?::.)))) |ET| 
+1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(JJ (abbreviation::n))(NNP (oas::n)))(VP (VBP (stand::n))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.90130995843420258495370944729075  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (bmw::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+0.92127942343205859732080398316612  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (rca::n)))(VP (VBP (stand::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (archimedes::r)))(ADJP (JJ (famous::j))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.6489087745096459025617718907597  |BT| (S1 (SBARQ (WHADVP (WRB (why::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (word::n)))(`` (``::`))(NP (`` (``::`))(NN (abbreviation::n))('' (''::'))))(: (''::'))(ADVP (RB (so::r))(RB (long::r)))))(. (?::.)))) |ET| 
+-0.96124591340673459782806276052725  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (celtic::j))(NN (symbol::n)))(PP (IN (for::i))(NP (`` (``::`))(NP (`` (``::`))(NN (life::n))('' (''::')))('' (''::')))))))(. (?::.)))) |ET| 
+-0.040456363446989482279825267596607  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(JJ (english::j))(NN (translation::n)))(PP (IN (for::i))(S (NP (DT (the::d))(NN (word::n)))(`` (``::`))(ADJP (`` (``::`))(JJ (caliente::n))('' (''::')))('' (''::'))))))(. (?::.)))) |ET| 
+-0.44135267107153725030244117988332  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (tristan::n)))(VP (VB (come::v))(PRT (RP (back::r)))(PP (IN (as::r)))))(. (?::.)))) |ET| 
+-0.30790493784901773466344820917584  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (spice::n)))(SQ (AUX (do::v))(NP (NNS (chef::n)))(VP (VB (pay::v))(NP (DT (the::d))(RBS (most::j)))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.53332363500758750429753263233579  |BT| (S1 (S (NP (NNP (italy::n)))(VP (AUX (be::v))(NP (NP (DT (the::d))(JJS (large::j))(NN (producer::n)))(PP (IN (of::i))(WHNP (WP (what::w))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NNP (motto::n)))(PP (IN (for::i))(NP (NP (DT (the::d))(NNP (state::n)))(PP (IN (of::i))(NP (NNP (maryland::n))))))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (an::d))(NN (edentulous::j)))(VP (VBP (smile::n))(NP (NN (lack::n)))))(. (?::.)))) |ET| 
+-0.075637502007424695094073285872582  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (another::d))(NN (name::n)))(PP (IN (for::i))(NP (NNP (east::n))(NNP (germany::n)))))))(. (?::.)))) |ET| 
+-0.79206353138451568440814298810437  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(ADJP (JJ (usenet::v))(PP (IN (for::i))(NP (DT (the::d))(NNP (internet::n))))))(. (?::.)))) |ET| 
+-0.68419588440719958377655984804733  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (margaret::n))(NNP (thatcher::n)))(VP (VBN (know::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-1  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (treatment::n)))(PP (IN (for::i))(NP (NN (depression::n)))))))(. (?::.)))) |ET| 
+-0.43378594842568585221442845067941  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (deadrise::r)))(, (,::,))(ADVP (RB (nautical::j)))(, (,::,)))(. (?::.)))) |ET| 
+-0.30612230558638464650300647917902  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (DT (the::d))(JJS (fast::j))(NN (computer::n))))(. (?::.)))) |ET| 
+-0.16473519453268847811955311044585  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (country::n)))(SQ (AUX (do::v))(NP (DT (the::d))(JJ (ancient::j))(NNP (romans::n)))(VP (VBP (refer::v))(PP (TO (to::t)))(PP (IN (as::i))(NP (NNP (hibernia::n))))))(. (?::.)))) |ET| 
+-0.42609425739569850577481702202931  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (chemical::j))(NN (formula::n)))(PP (IN (for::i))(NP (NN (napalm::n)))))))(. (?::.)))) |ET| 
+-0.62056436845144946623520354478387  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (caliente::n)))(VP (VB (mean::v))(, (,::,))(PP (IN (in::i))(NP (NNP (english::n))))))(. (?::.)))) |ET| 
+-0.35438503167198809329363484721398  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (name::n)))(PP (IN (of::i))(NP (NP (DT (the::d))(NN (planet::n)))(SBAR (WHNP (WDT (that::i)))(S (NP (DT (the::d))(NNPS (ewoks::n)))(VP (VBP (live::v))(PP (IN (on::i)))))))))))(. (?::.)))) |ET| 
+-0.25675121867867439773291948768019  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNS (peacock::n)))(VP (NN (mate::v))(PP (IN (with::i)))))(. (?::.)))) |ET| 
+-0.25530566792238573725626338273287  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NP (NNP (andy::n))(JJ (hardy::n))(POS ('s::p)))(NN (father::n)))(VP (AUX (do::n))(PP (IN (for::i))(NP (DT (a::d))(NN (living::n))))))(. (?::.)))) |ET| 
+-0.10337300032253904369383690209361  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (the::d))(NNP (seven::n))(VBZ (dwarfs::n)))(VP (AUX (do::v))(PP (IN (for::i))(NP (DT (a::d))(NN (living::n))))))(. (?::.)))) |ET| 
+-0.3031397112537794757969322745339  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (DT (an::d))(NN (emperor::n)))(VP (AUX (do::v))))(. (?::.)))) |ET| 
+-0.20966945789845048420119155707653  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (meaning::n)))(PP (IN (of::i))(`` (``::`))(ADJP (`` (``::`))(JJ (cpr::n))('' (''::')))('' (''::'))))))(. (?::.)))) |ET| 
+-0.032679345266004480863308856442018  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (narcolepsy::n))))(. (?::.)))) |ET| 
+-0.19107531454076914778639206815569  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (DT (the::d))(`` (``::`))(NP (`` (``::`))(NP (NNP (dead::n))(NNP (man::n))(POS ('s::p)))(NN (hand::n))('' (''::')))('' (''::'))))(. (?::.)))) |ET| 
+-0.1951555901402942383437988382866  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (cushman::n))(CC (and::c))(NNP (wakefield::v)))(VP (VBN (know::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.25175726599402659111603952624137  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (country::n)))(SQ (AUX (be::v))(NP (NNP (kim::n))(NNP (philby::n)))(ADVP (RB (really::r)))(VP (VBG (work::v))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.34401874344051519560849783374579  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (esquire::v)))(VP (VB (name::n))(NP (NP (NNP (ash::n))(NNP (hole::n)))(PP (IN (of::i))(NP (DT (the::d))(NN (year::n)))))(PP (IN (for::i))(NP (CD (1980::c))))))(. (?::.)))) |ET| 
+-0.24110650081156737023491132276831  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (temperature::n)))(PP (IN (for::i))(S (VP (VBG (bake::v))(NP (NNP (peachy::n))(NNP (oat::n))(NNPS (muffins::n))))))))(. (?::.)))) |ET| 
+-0.15497997620924613970672112372995  |BT| (S1 (SBARQ (WHADVP (WRB (how::w)))(SQ (AUX (do::v))(NP (PRP (you::p)))(VP (VBP (say::v))(`` (``::`))(NP (`` (``::`))(NP (NNP (grandma::n))(POS (''::')))('' (''::'))(PP (IN (in::i))(NP (NNP (irish::n)))))))(. (?::.)))) |ET| 
+-0.47366668737596329119554638964473  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (DT (the::d))(NNP (poconos::n))))(. (?::.)))) |ET| 
+-0.47366668737596406835166362725431  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (DT (the::d))(NNP (internet2::n))))(. (?::.)))) |ET| 
+-0.30913742823870493658944269554922  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (warlock::n)))(VP (VBP (wear::n))(PP (IN (on::i))(NP (NP (PRP$ (his::p))(NN (forehead::n)))(PP (IN (in::i))(NP (VB (marvel::n))(NNS (comic::n))))))))(. (?::.)))) |ET| 
+-0.3053752461947926155616528376413  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(VP (VBG (barnstorm::v))))(. (?::.)))) |ET| 
+-0.38337630141366263458735375024844  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (zionism::n))))(. (?::.)))) |ET| 
+-0.38337630141365841573986017465359  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (java::n))))(. (?::.)))) |ET| 
+-0.38337630141365686142762569943443  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (smartnet::n))))(. (?::.)))) |ET| 
+-0.38337630141367007308161873879726  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (doegs::n))))(. (?::.)))) |ET| 
+-0.38337630141366041414130449993536  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NNP (linux::n))))(. (?::.)))) |ET| 
+-0.3960824301582659412446218993864  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (`` (``::`))(NP (`` (``::`))(NNP (semper::n))(NNP (fidelis::n))('' (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.057523822086504555750607892150583  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (chemical::j))(NN (symbol::n)))(PP (IN (for::i))(NP (NN (nitrogen::n)))))))(. (?::.)))) |ET| 
+-0.16478287792070922535003774100915  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (west::n))(NNP (indian::n))(NN (steel::n))(NNS (band::n)))(VP (VBP (use::v))(PP (IN (as::i))(NP (NNS (instrument::n))))))(. (?::.)))) |ET| 
+-0.21538967163244038260927482042462  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (term::n)))(PP (IN (for::i))(NP (DT (any::d))(JJ (four-sided::j))(NN (figure::n))))))(. (?::.)))) |ET| 
+-0.17261249149120283519209806399886  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(NN (population::n)))(PP (IN (of::i))(NP (NP (NNP (arcadia::n)))(, (,::,))(NP (NNP (florida::n)))))))(. (?::.)))) |ET| 
+-0.54851264544168176762184430117486  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (robert::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.11416329748369694052634315539763  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NN (year::n)))(SQ (AUX (do::v))(NP (NNP (rossetti::n)))(VP (VBP (paint::n))(`` (``::`))(NP (`` (``::`))(NP (NNP (beata::n))(NNP (beatrix::n))(POS (''::')))('' (''::')))))(. (?::.)))) |ET| 
+-0.13286242418540217258282609691378  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (JJ (cool::n))(NN (hand::n))(NNP (luke::n)))(VP (VB (go::v))(PP (TO (to::t))(NP (NN (jail::v))))(PP (IN (for::i)))))(. (?::.)))) |ET| 
+-0.011347430958486670604656865180004  |BT| (S1 (SBARQ (WHNP (WDT (what::w))(NNS (animal::n)))(SQ (AUX (do::v))(NP (PRP (you::p)))(VP (VBP (find::v))(PP (IN (in::i))(NP (DT (the::d))(NN (stock::n))(NN (market::n))))))(. (?::.)))) |ET| 
+-0.10383523104926863089847444143743  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (name::n)))(PP (IN (for::i))(NP (NP (NNS (cloud::n)))(SBAR (WHNP (WDT (that::w)))(S (VP (VBP (produce::v))(NP (NN (rain::n)))))))))))(. (?::.)))) |ET| 
+-0.11238362300263965432023383073101  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(JJ (zodiac::n))(NN (sign::n)))(PP (IN (for::i))(NP (NNP (august::n))(CD (14::c)))))))(. (?::.)))) |ET| 
+-0.095282972163085968841933492967655  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NNS (requirement::n)))(PP (IN (for::i))(S (VP (VBG (become::v))(NP (NP (DT (a::d))(NN (citizen::n)))(PP (IN (of::i))(NP (NNP (australia::n)))))))))))(. (?::.)))) |ET| 
+-0.057224618157708184718046595662599  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (DT (the::d))(JJ (per-capita::j))(NN (income::n)))(PP (IN (of::i))(NP (NP (NNP (colombia::n)))(, (,::,))(NP (NNP (south::n))(NNP (america::n)))(, (,::,))))))(. (?::.)))) |ET| 
+-0.097275646210118527079657724243589  |BT| (S1 (SBARQ (WHNP (WP (what::w))(NNS (manufacturer::n)))(SQ (AUX (be::v))(NP (EX (there::r)))(PP (IN (in::i))(NP (NNP (texas::n)))))(. (?::.)))) |ET| 
+-0.032887135163135267079681511859235  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (paracetamol::n))))(. (?::.)))) |ET| 
+-0.032963457271495438805075650634535  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (molybdenum::n))))(. (?::.)))) |ET| 
+-0.032769945972135727796370474607102  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (viscosity::n))))(. (?::.)))) |ET| 
+-0.032679345266002614300848705397584  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (colour::n))))(. (?::.)))) |ET| 
+-0.032679345266003329006920807842107  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (pandoro::r))))(. (?::.)))) |ET| 
+-0.032679345265997417069314678883529  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (hebephrenia::n))))(. (?::.)))) |ET| 
+-0.033163255128674518079634481182438  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (saltpetre::n))))(. (?::.)))) |ET| 
+-0.033163255128685342754124576458707  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (magnetar::j))))(. (?::.)))) |ET| 
+-0.033163255128674795635390637471573  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (moxie::n))))(. (?::.)))) |ET| 
+-0.033149283103635393543662246429449  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (pasta::n))))(. (?::.)))) |ET| 
+-0.033149283103632708191721434332067  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (digitalis::n))))(. (?::.)))) |ET| 
+-0.03316325512867113189940937445499  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (ethylene::n))))(. (?::.)))) |ET| 
+-0.1009976838397981246941981225973  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NNP (richard::n))(NNP (feynman::n)))(VP (VBP (say::v))(PP (IN (upon::i))(S (VP (VBG (hear::v))(SBAR (S (NP (PRP (he::p)))(VP (MD (would::m))(VP (VB (receive::v))(NP (DT (the::d))(NNP (nobel::n))(NNP (prize::n)))(PP (IN (in::i))(NP (NNP (physics::n)))))))))))))(. (?::.)))) |ET| 
+-0.032769945972134006950682305614464  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (hypertext::v))))(. (?::.)))) |ET| 
+-0.02204651941065269293851258680661  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (fibre::n)))(PP (IN (in::i))(NP (NN (food::n)))))(. (?::.)))) |ET| 
+-0.032679345265999117098321136154482  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (hyperopia::n))))(. (?::.)))) |ET| 
+-0.032963457271501628298437935882248  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (e-commerce::j))))(. (?::.)))) |ET| 
+-0.077475219688333207823660586655024  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (gringo::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.032769945972129399525130111214821  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (crabgrass::j))))(. (?::.)))) |ET| 
+-0.033314498000199005423027642791567  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (thalassemia::v))))(. (?::.)))) |ET| 
+-0.032769945972133840417228611840983  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (diabetes::n))))(. (?::.)))) |ET| 
+-0.085946722180965828830068176102941  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (VB (idle::j)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.27285735797700028104628700020839  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (another::d))(NN (name::n)))(PP (IN (for::i))(NP (NN (nearsightedness::n)))))))(. (?::.)))) |ET| 
+-0.032887135163131631099275864471565  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (troilism::n))))(. (?::.)))) |ET| 
+-0.032887135163136266280403674500121  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (hydrogen::n))))(. (?::.)))) |ET| 
+-0.033314498000213410566772154197679  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (chromatics::n))))(. (?::.)))) |ET| 
+-0.077808889714416851202116731656133  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (mascot::n)))(PP (IN (for::i))(NP (NNP (notre::n))(NNP (dame::n))(NNP (university::n)))))))(. (?::.)))) |ET| 
+-0.033413857869810936751520102916402  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (porphyria::n))))(. (?::.)))) |ET| 
+-0.033413857869821983470615123223979  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (limbo::n))))(. (?::.)))) |ET| 
+-0.033314498000197145799461395654362  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (hydroelectricity::n))))(. (?::.)))) |ET| 
+-0.034711980843625478421188290667487  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (splatterpunk::v))))(. (?::.)))) |ET| 
+-0.032963457271498686207422679217416  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (time::n))))(. (?::.)))) |ET| 
+-0.076986294707351965449504405114567  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (palindromic::j)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.076986294707353727928555997550575  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NN (seccession::n)))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.029032004426833346588665563103859  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (NNP (nero::n))(NNP (wolfe::n))(POS ('s::p)))(NN (favourite::j)))(VP (VBP (drink::n))(PP (IN (during::i))(NP (NN (office::n))(NNS (hour::n))))))(. (?::.)))) |ET| 
+-0.017038387413638472756005626251863  |BT| (S1 (SBARQ (WHNP (WP (what::w))(JJ (german::j))(NN (city::n)))(SQ (AUX (do::v))(NP (NNPS (italians::n)))(VP (VBP (call::v))(NP (NP (DT (the::d))(NNP (monaco::n)))(PP (IN (of::i))(NP (NNP (bavaria::n)))))))(. (?::.)))) |ET| 
+-0.032887135163135572391013283777284  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (endometriosis::n))))(. (?::.)))) |ET| 
+-0.033140311222117989353730393986552  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (ouzo::n))))(. (?::.)))) |ET| 
+-0.033314498000213993433860082404863  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (sound::j))))(. (?::.)))) |ET| 
+-0.03314928310363983443576074705561  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (osmosis::n))))(. (?::.)))) |ET| 
+-0.032963457271499213563359376166773  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (goulash::n))))(. (?::.)))) |ET| 
+-0.033314498000214742834401704385527  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (deconstructionism::v))))(. (?::.)))) |ET| 
+-0.033163255128679319794215984984476  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (tyvek::v))))(. (?::.)))) |ET| 
+-0.032648612396348974939996878674719  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (humidity::n))))(. (?::.)))) |ET| 
+-0.032648612396341064600946424434369  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (yohimbine::n))))(. (?::.)))) |ET| 
+-0.032648612396341342156702580723504  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (cosmology::n))))(. (?::.)))) |ET| 
+-0.032769945972135172684858162028831  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (fellatio::n))))(. (?::.)))) |ET| 
+-0.033140311222112514566440211183362  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NN (platinum::n))))(. (?::.)))) |ET| 
+-0.0084857118008077048187942637014203  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (DT (some::d))(NN (fun::n))(NNS (thing::n)))(VP (TO (to::t))(VP (AUX (do::v))(PP (IN (in::i))(NP (NP (NNP (cozumel::n)))(, (,::,))(NP (NNP (mexico::n)))))(PP (IN (for::i))(NP (NNS (teenager::n)))))))(. (?::.)))) |ET| 
+-0.041430765906052491320821218323545  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NP (DT (the::d))(NN (name::n)))(`` (``::`))(NX (`` (``::`))(NX (NNP (sabrina::n)))('' (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.041430765906095595729752290026227  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (do::v))(NP (NP (DT (the::d))(NN (name::n)))(`` (``::`))(NX (`` (``::`))(NX (NNP (sheri::n)))('' (''::')))('' (''::')))(VP (VB (mean::v))))(. (?::.)))) |ET| 
+-0.020290295913086175971784541616216  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (population::n)))(PP (IN (of::i))(NP (NP (NNP (biloxi::n)))(, (,::,))(NP (NNP (mississippi::n))))))))(. (?::.)))) |ET| 
+-0.005452618970132411257978333196661  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (recipe::n))(CC (or::c))(NN (formula::n)))(PP (IN (for::i))(NP (NNP (coca-cola::n)))))))(. (?::.)))) |ET| 
+-0.0013096889315493132066592352202861  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (VP (AUX (be::v))(NP (NP (DT (the::d))(NN (function::n)))(PP (IN (of::i))(NP (NNP (ram::n)))))))(. (?::.)))) |ET| 
+-0.00088819582910942829201417225704063  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (NNP (california::n))(POS ('s::p)))(NN (capital::n))))(. (?::.)))) |ET| 
+-0.00088819582911925376578210489242338  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (NNP (answers.com::n))(POS ('s::p)))(NN (address::n))))(. (?::.)))) |ET| 
+-0.00088819582911231487187819766404573  |BT| (S1 (SBARQ (WHNP (WP (what::w)))(SQ (AUX (be::v))(NP (NP (NNP (november::n))(POS ('s::p)))(NN (birthstone::n))))(. (?::.)))) |ET| 
