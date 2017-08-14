@@ -73,4 +73,4 @@ print "mean error:", mean_squared_error(true_values, mean_predictions)
 
 print "bow error:", mean_squared_error(true_values, bow_predictions)
 
-print "tree Kernel error:", mean_squared_error(true_values.head(5), tK)
+print "tree Kernel error:", mean_squared_error(true_values.head(6000), tK)
