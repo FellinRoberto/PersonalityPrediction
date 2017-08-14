@@ -55,95 +55,44 @@ public class PersonalityPrediction {
 		/**
 		 * Instantiate a more complex multi-pipeline
 		 */
-
+		
+		
 		CSVReader X_train = new CSVReader(new FileReader("../dataset/X_train.csv"));
 		CSVReader Y_train = new CSVReader(new FileReader("../dataset/y_train.csv"));
 		CSVReader X_test = new CSVReader(new FileReader("../dataset/X_test.csv"));
 		CSVReader Y_test = new CSVReader(new FileReader("../dataset/y_test.csv"));
-		/*Scanner X_train = new Scanner(new File("../dataset/X_train.csv"), "ISO-8859-1");
-		Scanner Y_train = new Scanner(new File("../dataset/y_train.csv"), "ISO-8859-1");
-		Scanner X_test = new Scanner(new File("../dataset/X_test.csv"), "ISO-8859-1");
-		Scanner Y_test = new Scanner(new File("../dataset/y_test.csv"), "ISO-8859-1");*/
+		//Scanner X_train = new Scanner(new File("../dataset/X_train.csv"), "ISO-8859-1");
 
-		
 		// TRAIN
-		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 20, 10); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset) 
-		//String resultTrain = treeKernel(X_train, Y_train);
+		int i=1;
 		
-		String r=resultTrain.get(0);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/train1.dat" )  ){
-			out.println( r );
+		
+		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 50000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		
+		
+		for (String r: resultTrain) {        
+			r = r.substring(0, r.length() - 1);// to delete the last /n
+			try(  PrintWriter out = new PrintWriter( "TreeKernel/train"+i+".dat" )  ){
+				out.println( r );
+			}
+			i++;
 		}
-		
-		r=resultTrain.get(1);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/train2.dat" )  ){
-			out.println( r );
-		}
-		
-		r=resultTrain.get(2);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/train3.dat" )  ){
-			out.println( r );
-		}
-		
-		r=resultTrain.get(3);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/train4.dat" )  ){
-			out.println( r );
-		}
-		
-		r=resultTrain.get(4);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/train5.dat" )  ){
-			out.println( r );
-		}
-		
+
 		// TEST
-		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 20, 5); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset) 
-		//String resultTrain = treeKernel(X_train, Y_train);
-		
-		r=resultTest.get(0);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/test1.dat" )  ){
-			out.println( r );
+		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 10000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		i=1;
+		for (String r: resultTest) {        
+			r = r.substring(0, r.length() - 1);// to delete the last /n
+			try(  PrintWriter out = new PrintWriter( "TreeKernel/test"+i+".dat" )  ){
+				out.println( r );
+			}
+			i++;
 		}
-		
-		r=resultTest.get(1);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/test2.dat" )  ){
-			out.println( r );
-		}
-		
-		r=resultTest.get(2);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/test3.dat" )  ){
-			out.println( r );
-		}
-		
-		r=resultTest.get(3);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/test4.dat" )  ){
-			out.println( r );
-		}
-		
-		r=resultTest.get(4);
-		r = r.substring(0, r.length() - 1);// to delete the last /n
-		try(  PrintWriter out = new PrintWriter( "TreeKernel/test5.dat" )  ){
-			out.println( r );
-		}
-		
-		//treeKernel(X_test, Y_test);
-
-
-
 
 
 	}
 
-
-	private static ArrayList<String> treeKernel(CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead) throws UIMAException, IOException {
+	private static ArrayList<String> treeKernel(CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase) throws UIMAException, IOException {
 		X.readNext();
 		Y.readNext();
 		String r1="";
@@ -154,28 +103,33 @@ public class PersonalityPrediction {
 		ArrayList<String> result = new ArrayList<String>();
 		Analyzer analyzer = instantiateTrecAnalyzer(new UIMANoPersistence());
 		String [] nextLineX = null;
-		
+
 		int count = 0;
 		while ((nextLineX = X.readNext()) != null && count<numberOfRowRead) {
 
-
 			String x = nextLineX[0];
-
+			x=x.replaceAll("\\.+","."); // delete all dots and transform into a single dot
+			System.out.println(x+"\n");
 			boolean check=true;
 			String[] split = x.split("\\.");
+			
+			if (split.length>maxPhrase) {
+				check=false;
+			}
 			for (String s: split) {           
-		        //Do your stuff here
-		        
-		        if (s.trim().split("\\s+").length>maxWord) {
-		        	System.out.println("ENTRATO!!!!\n \n \n"); 
-		        	check=false;
-		        	break;
-		        }
-		    }
+
+				// check if there are phrase with more that maxWord word
+				if (s.trim().split("\\s+").length>maxWord) {
+					System.out.println("ENTRATO!!!!\n \n \n"); 
+					check=false;
+					break;
+				}
+			}
+			
+			String[] prediction = Y.readNext();
 			if (check) {
-
+				try {
 				Analyzable post = new SimpleContent("post", x);
-
 
 				/**
 				 * Instantiate two CASes for the different type of content
@@ -187,7 +141,6 @@ public class PersonalityPrediction {
 				 */
 				analyzer.analyze(questionCas, post, POST_ANALYSIS);
 
-
 				/**
 				 * Set the output parameters for Tokens
 				 */
@@ -195,12 +148,10 @@ public class PersonalityPrediction {
 						new String[] { RichNode.OUTPUT_PAR_LEMMA,
 								RichNode.OUTPUT_PAR_TOKEN_LOWERCASE });
 
-
 				/**
 				 * Build the trees from CASes
 				 */		
 				TokenTree questionTree = RichTree.getPosChunkTree(questionCas);
-
 
 				/**
 				 * Instantiate a tree serializer
@@ -214,22 +165,25 @@ public class PersonalityPrediction {
 				/**
 				 * Output the plain trees
 				 */
-				//System.out.println("Trees with lowercase lemmas");
-				String[] prediction = Y.readNext();
+
 				
+
 				r1+=prediction[0]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
 				r2+=prediction[1]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
 				r3+=prediction[2]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
 				r4+=prediction[3]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
 				r5+=prediction[4]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
-				
+
 				count++;
 				System.out.print(count+"\n");
+				}catch (OutOfMemoryError e) {
+					 System.err.println("Caught OutOfMemoryError: " + e.getMessage());
+				}
 			}
 			else {
-				Y.readNext();
+				
 			}
-			
+
 		}
 		X.close();
 		result.add(r1);
