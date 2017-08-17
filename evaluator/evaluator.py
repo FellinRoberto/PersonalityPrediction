@@ -6,37 +6,38 @@ import numpy as np
 mean_predictions=pd.read_csv('../meanPrediction/y_pred.csv', engine='c')
 bow_predictions=pd.read_csv('../bow/bowPrediction.csv', engine='c',header=None)
 true_values = pd.read_csv('../dataset/y_test.csv', engine='c')
+true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_testNew.csv', engine='c',header=None)
 
-os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train1.dat model")
-os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test1.dat model output1.txt")
+os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train1.dat model1")
+os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test1.dat model1 output1.txt")
 
-os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train2.dat model")
-os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test2.dat model output2.txt")
+os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train2.dat model2")
+os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test2.dat model2 output2.txt")
 
-os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train3.dat model")
-os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test3.dat model output3.txt")
+os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train3.dat model3")
+os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test3.dat model3 output3.txt")
 
-os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train4.dat model")
-os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test4.dat model output4.txt")
+os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train4.dat model4")
+os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test4.dat model4 output4.txt")
 
-os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train5.dat model")
-os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test5.dat model output5.txt")
+os.system("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train5.dat model5")
+os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test5.dat model5 output5.txt")
 
 
 #treeKernel_predictions=[]
 with open('output1.txt') as f:
     tKp1 = f.read().splitlines()
 
-with open('output1.txt') as f:
+with open('output2.txt') as f:
     tKp2 = f.read().splitlines()
 
-with open('output1.txt') as f:
+with open('output3.txt') as f:
     tKp3 = f.read().splitlines()
 
-with open('output1.txt') as f:
+with open('output4.txt') as f:
     tKp4 = f.read().splitlines()
 
-with open('output1.txt') as f:
+with open('output5.txt') as f:
     tKp5 = f.read().splitlines()
 
 
@@ -73,4 +74,4 @@ print "mean error:", mean_squared_error(true_values, mean_predictions)
 
 print "bow error:", mean_squared_error(true_values, bow_predictions)
 
-print "tree Kernel error:", mean_squared_error(true_values.head(6000), tK)
+print "tree Kernel error:", mean_squared_error(true_valuesNew, tK)
