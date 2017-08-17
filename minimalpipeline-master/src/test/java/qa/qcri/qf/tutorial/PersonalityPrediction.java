@@ -4,6 +4,7 @@ import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDesc
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.IOException;
@@ -37,6 +38,7 @@ import cc.mallet.types.FeatureVector;
 import com.google.common.base.Joiner;
 
 import au.com.bytecode.opencsv.CSVReader;
+import au.com.bytecode.opencsv.CSVWriter;
 import de.tudarmstadt.ukp.dkpro.core.opennlp.OpenNlpPosTagger;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordLemmatizer;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordNamedEntityRecognizer;
@@ -67,7 +69,7 @@ public class PersonalityPrediction {
 		int i=1;
 		
 		
-		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 50000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		/*ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 2000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		
 		
 		for (String r: resultTrain) {        
@@ -76,10 +78,10 @@ public class PersonalityPrediction {
 				out.println( r );
 			}
 			i++;
-		}
+		}*/
 
 		// TEST
-		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 10000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 1000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		i=1;
 		for (String r: resultTest) {        
 			r = r.substring(0, r.length() - 1);// to delete the last /n
@@ -100,6 +102,9 @@ public class PersonalityPrediction {
 		String r3="";
 		String r4="";
 		String r5="";
+		CSVWriter writer = new CSVWriter(new FileWriter("y_testNew.csv",false),',','\0');
+	    
+	     
 		ArrayList<String> result = new ArrayList<String>();
 		Analyzer analyzer = instantiateTrecAnalyzer(new UIMANoPersistence());
 		String [] nextLineX = null;
@@ -174,6 +179,10 @@ public class PersonalityPrediction {
 				r4+=prediction[3]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
 				r5+=prediction[4]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
 
+				//String[] entries = prediction[0]+"#"+prediction[0]+"#"+prediction[3]+"#"+prediction[4]+"#"+prediction[5].split("#");
+			    writer.writeNext(prediction);
+			    
+			     
 				count++;
 				System.out.print(count+"\n");
 				}catch (OutOfMemoryError e) {
@@ -186,6 +195,7 @@ public class PersonalityPrediction {
 
 		}
 		X.close();
+		writer.close();
 		result.add(r1);
 		result.add(r2);
 		result.add(r3);
