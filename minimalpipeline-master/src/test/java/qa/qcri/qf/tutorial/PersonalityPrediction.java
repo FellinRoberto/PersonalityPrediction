@@ -7,8 +7,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.UnsupportedEncodingException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.io.IOException;
 import java.io.PrintWriter;
+
 
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_engine.AnalysisEngine;
@@ -36,6 +40,7 @@ import cc.mallet.types.Alphabet;
 import cc.mallet.types.FeatureVector;
 
 import com.google.common.base.Joiner;
+import com.vdurmont.emoji.EmojiParser;
 
 import au.com.bytecode.opencsv.CSVReader;
 import au.com.bytecode.opencsv.CSVWriter;
@@ -69,7 +74,7 @@ public class PersonalityPrediction {
 		int i=1;
 		
 		
-		/*ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 2000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 200, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		
 		
 		for (String r: resultTrain) {        
@@ -78,10 +83,10 @@ public class PersonalityPrediction {
 				out.println( r );
 			}
 			i++;
-		}*/
+		}
 
 		// TEST
-		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 1000, 4); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 40, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		i=1;
 		for (String r: resultTest) {        
 			r = r.substring(0, r.length() - 1);// to delete the last /n
@@ -92,9 +97,12 @@ public class PersonalityPrediction {
 		}
 
 
+		/*String str = "An 😀awesome 😃string with a few 😉emojis!";
+		String result = EmojiParser.parseToAliases(str);
+		System.out.println(result);*/
 	}
 
-	private static ArrayList<String> treeKernel(CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase) throws UIMAException, IOException {
+	private static ArrayList<String> treeKernel(CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase, int minWord) throws UIMAException, IOException {
 		X.readNext();
 		Y.readNext();
 		String r1="";
@@ -102,7 +110,7 @@ public class PersonalityPrediction {
 		String r3="";
 		String r4="";
 		String r5="";
-		CSVWriter writer = new CSVWriter(new FileWriter("y_testNew.csv",false),',','\0');
+		CSVWriter writer = new CSVWriter(new FileWriter("TreeKernel/y_testNew.csv",false),',','\0');
 	    
 	     
 		ArrayList<String> result = new ArrayList<String>();
@@ -114,7 +122,14 @@ public class PersonalityPrediction {
 
 			String x = nextLineX[0];
 			x=x.replaceAll("\\.+","."); // delete all dots and transform into a single dot
-			System.out.println(x+"\n");
+			String before = x;
+			x= parserEmoji (x);
+			System.out.println("Before: " + before);
+			if (!x.equals(before)) {
+				
+		        System.out.println(" After: " + x);
+			}
+			
 			boolean check=true;
 			String[] split = x.split("\\.");
 			
@@ -124,7 +139,7 @@ public class PersonalityPrediction {
 			for (String s: split) {           
 
 				// check if there are phrase with more that maxWord word
-				if (s.trim().split("\\s+").length>maxWord) {
+				if (s.trim().split("\\s+").length>maxWord || s.trim().split("\\s+").length<minWord) {
 					System.out.println("ENTRATO!!!!\n \n \n"); 
 					check=false;
 					break;
@@ -202,6 +217,26 @@ public class PersonalityPrediction {
 		result.add(r4);
 		result.add(r5);
 		return result;
+	}
+
+	private static String parserEmoji(String x) {
+		try {
+            byte[] utf8Bytes = x.getBytes("UTF-8");
+
+            x = new String(utf8Bytes, "UTF-8");
+
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        Pattern unicodeOutliers = Pattern.compile("[^\\x00-\\x7F]",
+                Pattern.UNICODE_CASE | Pattern.CANON_EQ
+                        | Pattern.CASE_INSENSITIVE);
+        Matcher unicodeOutlierMatcher = unicodeOutliers.matcher(x);
+
+        //System.out.println("Before: " + x);
+        x = unicodeOutlierMatcher.replaceAll(" ");
+       // System.out.println("After: " + x);
+		return x;
 	}
 
 	private static Analyzer instantiateTrecAnalyzer(
