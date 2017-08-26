@@ -74,7 +74,7 @@ public class PersonalityPrediction {
 		int i=1;
 		
 		
-		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 200, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 30000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		
 		
 		for (String r: resultTrain) {        
@@ -86,7 +86,7 @@ public class PersonalityPrediction {
 		}
 
 		// TEST
-		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 40, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 10000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		i=1;
 		for (String r: resultTest) {        
 			r = r.substring(0, r.length() - 1);// to delete the last /n
