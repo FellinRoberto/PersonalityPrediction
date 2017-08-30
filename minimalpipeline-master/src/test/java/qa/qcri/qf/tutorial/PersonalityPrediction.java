@@ -13,12 +13,14 @@ import java.util.regex.Pattern;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.language.LanguageIdentifier;
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
+import org.xml.sax.SAXException;
 
 import qa.qcri.qf.annotators.IllinoisChunker;
 import qa.qcri.qf.features.PairFeatureFactory;
@@ -51,13 +53,16 @@ import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordParser;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordPosTagger;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordSegmenter;
 
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.language.LanguageIdentifier;
+import org.xml.sax.SAXException;
 
 public class PersonalityPrediction {
 
 	public static final String POST_ANALYSIS = "POST_ANALYSIS";
 
 
-	public static void main(String[] args) throws UIMAException, IOException {
+	public static void main(String[] args) throws UIMAException, IOException, SAXException, TikaException {
 
 		/**
 		 * Instantiate a more complex multi-pipeline
@@ -74,7 +79,7 @@ public class PersonalityPrediction {
 		int i=1;
 		
 		
-		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 30000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 4000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		
 		
 		for (String r: resultTrain) {        
@@ -86,7 +91,7 @@ public class PersonalityPrediction {
 		}
 
 		// TEST
-		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 10000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 1000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		i=1;
 		for (String r: resultTest) {        
 			r = r.substring(0, r.length() - 1);// to delete the last /n
@@ -102,7 +107,7 @@ public class PersonalityPrediction {
 		System.out.println(result);*/
 	}
 
-	private static ArrayList<String> treeKernel(CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase, int minWord) throws UIMAException, IOException {
+	private static ArrayList<String> treeKernel(CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase, int minWord) throws UIMAException, IOException, SAXException, TikaException {
 		X.readNext();
 		Y.readNext();
 		String r1="";
@@ -146,8 +151,12 @@ public class PersonalityPrediction {
 				}
 			}
 			
+			LanguageIdentifier identifier = new LanguageIdentifier(x);
+		    String language = identifier.getLanguage();
+		    
+		    
 			String[] prediction = Y.readNext();
-			if (check) {
+			if (check && language.equals("en")) {
 				try {
 				Analyzable post = new SimpleContent("post", x);
 
@@ -187,12 +196,14 @@ public class PersonalityPrediction {
 				 */
 
 				
-
-				r1+=prediction[0]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
-				r2+=prediction[1]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
-				r3+=prediction[2]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
-				r4+=prediction[3]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
-				r5+=prediction[4]+" |BT| "+ts.serializeTree(questionTree, parameterList)+"  |ET|\n";
+				//(ROOT)
+				String treekernel = ts.serializeTree(questionTree, parameterList);
+				if (!treekernel.equals("(ROOT)")){
+				r1+=prediction[0]+" |BT| "+treekernel+" |ET|\n";
+				r2+=prediction[1]+" |BT| "+treekernel+" |ET|\n";
+				r3+=prediction[2]+" |BT| "+treekernel+" |ET|\n";
+				r4+=prediction[3]+" |BT| "+treekernel+" |ET|\n";
+				r5+=prediction[4]+" |BT| "+treekernel+" |ET|\n";
 
 				//String[] entries = prediction[0]+"#"+prediction[0]+"#"+prediction[3]+"#"+prediction[4]+"#"+prediction[5].split("#");
 			    writer.writeNext(prediction);
@@ -200,6 +211,9 @@ public class PersonalityPrediction {
 			     
 				count++;
 				System.out.print(count+"\n");
+				} else {
+					System.out.print("ROOT: "+x+" "+treekernel);
+				}
 				}catch (OutOfMemoryError e) {
 					 System.err.println("Caught OutOfMemoryError: " + e.getMessage());
 				}

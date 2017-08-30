@@ -45,5 +45,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/emoji-java"/>
+	<classpathentry kind="lib" path="lib/org.apache.tika.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
