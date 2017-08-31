@@ -11,20 +11,20 @@ true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_testNew.csv
 # -v 3
 #-F proviamo 0 1 3
 
-n1=4000
-n2=1000
+n1=18000
+n2=3500
 
 log=""
 for c in range(1,6):
     log=log+"MODEL"+ str(c) +"\n \n"
-    os.system("head -" + str(n1) + " ../minimalpipeline-master/TreeKernel/train" + str(c) + ".dat > ../minimalpipeline-master/TreeKernel/train.dat")
-    os.system("head -" + str(n2) + " ../minimalpipeline-master/TreeKernel/test" + str(c) + ".dat > ../minimalpipeline-master/TreeKernel/test.dat")
+    os.system("head -" + str(n1) + " ../minimalpipeline-master/TreeKernel/train" + str(c) + ".dat > ../minimalpipeline-master/TreeKernel/train" + str(c) + "b.dat")
+    os.system("head -" + str(n2) + " ../minimalpipeline-master/TreeKernel/test" + str(c) + ".dat > ../minimalpipeline-master/TreeKernel/test" + str(c) + "b.dat")
 
-    f=os.popen("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train.dat model"+str(c))
+    f=os.popen("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train" + str(c) + "b.dat model"+str(c))
     f=f.read()
     log = log + f + "\n"
     print f
-    f=os.popen("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test.dat model"+str(c)+" output"+str(c)+".txt")
+    f=os.popen("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test" + str(c) + "b.dat model"+str(c)+" output"+str(c)+".txt")
     f = f.read()
     log = log + f + "\n"
     print f
