@@ -67,21 +67,21 @@ public class PersonalityPrediction {
 		/**
 		 * Instantiate a more complex multi-pipeline
 		 */
-		
-		
+
+
 		CSVReader X_train = new CSVReader(new FileReader("../dataset/X_train.csv"));
 		CSVReader Y_train = new CSVReader(new FileReader("../dataset/y_train.csv"));
-		CSVReader X_test = new CSVReader(new FileReader("../dataset/X_test.csv"));
-		CSVReader Y_test = new CSVReader(new FileReader("../dataset/y_test.csv"));
+		CSVReader X_test = new CSVReader(new FileReader("../dataset/x_validation.csv"));
+		CSVReader Y_test = new CSVReader(new FileReader("../dataset/y_validation.csv"));
 		//Scanner X_train = new Scanner(new File("../dataset/X_train.csv"), "ISO-8859-1");
 
 		// TRAIN
 		int i=1;
-		
-		
-		ArrayList<String> resultTrain = treeKernel(X_train, Y_train, 15, 30000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
-		
-		
+
+
+		ArrayList<String> resultTrain = treeKernel(0, X_train, Y_train, 15, 20000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+
+
 		for (String r: resultTrain) {        
 			r = r.substring(0, r.length() - 1);// to delete the last /n
 			try(  PrintWriter out = new PrintWriter( "TreeKernel/train"+i+".dat" )  ){
@@ -91,7 +91,7 @@ public class PersonalityPrediction {
 		}
 
 		// TEST
-		ArrayList<String> resultTest = treeKernel(X_test, Y_test, 15, 10000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTest = treeKernel(1, X_test, Y_test, 15, 15000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		i=1;
 		for (String r: resultTest) {        
 			r = r.substring(0, r.length() - 1);// to delete the last /n
@@ -107,7 +107,7 @@ public class PersonalityPrediction {
 		System.out.println(result);*/
 	}
 
-	private static ArrayList<String> treeKernel(CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase, int minWord) throws UIMAException, IOException, SAXException, TikaException {
+	private static ArrayList<String> treeKernel(int w, CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase, int minWord) throws UIMAException, IOException, SAXException, TikaException {
 		X.readNext();
 		Y.readNext();
 		String r1="";
@@ -115,9 +115,19 @@ public class PersonalityPrediction {
 		String r3="";
 		String r4="";
 		String r5="";
-		CSVWriter writer = new CSVWriter(new FileWriter("TreeKernel/y_testNew.csv",false),',','\0');
-	    
-	     
+		CSVWriter writerTest = null;
+		CSVWriter writerXTest = null;
+		CSVWriter writerXTrain = null;
+		CSVWriter writerTrain = null;
+		if (w==1) {
+			writerTest = new CSVWriter(new FileWriter("TreeKernel/y_testNew.csv",false),',','\0');
+			writerXTest = new CSVWriter(new FileWriter("TreeKernel/x_testNew.csv"));
+		
+		}else {
+			writerXTrain = new CSVWriter(new FileWriter("TreeKernel/x_trainNew.csv"));
+			writerTrain = new CSVWriter(new FileWriter("TreeKernel/y_trainNew.csv",false),',','\0');
+		}
+
 		ArrayList<String> result = new ArrayList<String>();
 		Analyzer analyzer = instantiateTrecAnalyzer(new UIMANoPersistence());
 		String [] nextLineX = null;
@@ -131,13 +141,13 @@ public class PersonalityPrediction {
 			x= parserEmoji (x);
 			System.out.println("Before: " + before);
 			if (!x.equals(before)) {
-				
-		        System.out.println(" After: " + x);
+
+				System.out.println(" After: " + x);
 			}
-			
+
 			boolean check=true;
 			String[] split = x.split("\\.");
-			
+
 			if (split.length>maxPhrase) {
 				check=false;
 			}
@@ -150,81 +160,102 @@ public class PersonalityPrediction {
 					break;
 				}
 			}
-			
+
 			LanguageIdentifier identifier = new LanguageIdentifier(x);
-		    String language = identifier.getLanguage();
-		    
-		    
+			String language = identifier.getLanguage();
+
+
 			String[] prediction = Y.readNext();
 			if (check && language.equals("en")) {
 				try {
-				Analyzable post = new SimpleContent("post", x);
+					Analyzable post = new SimpleContent("post", x);
 
-				/**
-				 * Instantiate two CASes for the different type of content
-				 */
-				JCas questionCas = JCasFactory.createJCas();
+					/**
+					 * Instantiate two CASes for the different type of content
+					 */
+					JCas questionCas = JCasFactory.createJCas();
 
-				/**
-				 * Analyze the question and the passage with different sets of annotators
-				 */
-				analyzer.analyze(questionCas, post, POST_ANALYSIS);
+					/**
+					 * Analyze the question and the passage with different sets of annotators
+					 */
+					analyzer.analyze(questionCas, post, POST_ANALYSIS);
 
-				/**
-				 * Set the output parameters for Tokens
-				 */
-				String parameterList = Joiner.on(",").join(
-						new String[] { RichNode.OUTPUT_PAR_LEMMA,
-								RichNode.OUTPUT_PAR_TOKEN_LOWERCASE });
+					/**
+					 * Set the output parameters for Tokens
+					 */
+					String parameterList = Joiner.on(",").join(
+							new String[] { RichNode.OUTPUT_PAR_LEMMA,
+									RichNode.OUTPUT_PAR_TOKEN_LOWERCASE });
 
-				/**
-				 * Build the trees from CASes
-				 */		
-				TokenTree questionTree = RichTree.getPosChunkTree(questionCas);
+					/**
+					 * Build the trees from CASes
+					 */		
+					TokenTree questionTree = RichTree.getPosChunkTree(questionCas);
 
-				/**
-				 * Instantiate a tree serializer
-				 */
+					/**
+					 * Instantiate a tree serializer
+					 */
 
-				TreeSerializer ts = new TreeSerializer()
-						.enableRelationalTags()
-						.enableAdditionalLabels()
-						.useRoundBrackets();
+					TreeSerializer ts = new TreeSerializer()
+							.enableRelationalTags()
+							.enableAdditionalLabels()
+							.useRoundBrackets();
 
-				/**
-				 * Output the plain trees
-				 */
+					/**
+					 * Output the plain trees
+					 */
 
-				
-				//(ROOT)
-				String treekernel = ts.serializeTree(questionTree, parameterList);
-				if (!treekernel.equals("(ROOT)")){
-				r1+=prediction[0]+" |BT| "+treekernel+" |ET|\n";
-				r2+=prediction[1]+" |BT| "+treekernel+" |ET|\n";
-				r3+=prediction[2]+" |BT| "+treekernel+" |ET|\n";
-				r4+=prediction[3]+" |BT| "+treekernel+" |ET|\n";
-				r5+=prediction[4]+" |BT| "+treekernel+" |ET|\n";
 
-				//String[] entries = prediction[0]+"#"+prediction[0]+"#"+prediction[3]+"#"+prediction[4]+"#"+prediction[5].split("#");
-			    writer.writeNext(prediction);
-			    
-			     
-				count++;
-				System.out.print(count+"\n");
-				} else {
-					System.out.print("ROOT: "+x+" "+treekernel);
-				}
+					//(ROOT)
+					String treekernel = ts.serializeTree(questionTree, parameterList);
+					if (!treekernel.equals("(ROOT)")){
+						r1+=prediction[0]+" |BT| "+treekernel+" |ET|\n";
+						r2+=prediction[1]+" |BT| "+treekernel+" |ET|\n";
+						r3+=prediction[2]+" |BT| "+treekernel+" |ET|\n";
+						r4+=prediction[3]+" |BT| "+treekernel+" |ET|\n";
+						r5+=prediction[4]+" |BT| "+treekernel+" |ET|\n";
+
+						//String[] entries = prediction[0]+"#"+prediction[0]+"#"+prediction[3]+"#"+prediction[4]+"#"+prediction[5].split("#");
+						String [] out = new String[1];
+						out[0]=x;
+						if (w==1) {
+							writerTest.writeNext(prediction);
+							//String [] country = x.split("#");
+							
+							writerXTest.writeNext(out);
+						}
+
+						else {
+							writerTrain.writeNext(prediction);
+							
+							
+							writerXTrain.writeNext(out);
+
+						}
+						//System.out.print("out: "+out[0]+"\n");
+						count++;
+						System.out.print(count+"\n");
+					} else {
+						System.out.print("ROOT: "+x+" "+treekernel);
+					}
 				}catch (OutOfMemoryError e) {
-					 System.err.println("Caught OutOfMemoryError: " + e.getMessage());
+					System.err.println("Caught OutOfMemoryError: " + e.getMessage());
 				}
 			}
 			else {
-				
+
 			}
 
 		}
 		X.close();
-		writer.close();
+		if (w==1) {
+			writerXTest.close();
+			writerTest.close();}
+		else {
+		
+		writerXTrain.close();
+		writerTrain.close();
+		}
 		result.add(r1);
 		result.add(r2);
 		result.add(r3);
@@ -235,21 +266,21 @@ public class PersonalityPrediction {
 
 	private static String parserEmoji(String x) {
 		try {
-            byte[] utf8Bytes = x.getBytes("UTF-8");
+			byte[] utf8Bytes = x.getBytes("UTF-8");
 
-            x = new String(utf8Bytes, "UTF-8");
+			x = new String(utf8Bytes, "UTF-8");
 
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        Pattern unicodeOutliers = Pattern.compile("[^\\x00-\\x7F]",
-                Pattern.UNICODE_CASE | Pattern.CANON_EQ
-                        | Pattern.CASE_INSENSITIVE);
-        Matcher unicodeOutlierMatcher = unicodeOutliers.matcher(x);
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		Pattern unicodeOutliers = Pattern.compile("[^\\x00-\\x7F]",
+				Pattern.UNICODE_CASE | Pattern.CANON_EQ
+				| Pattern.CASE_INSENSITIVE);
+		Matcher unicodeOutlierMatcher = unicodeOutliers.matcher(x);
 
-        //System.out.println("Before: " + x);
-        x = unicodeOutlierMatcher.replaceAll(" ");
-       // System.out.println("After: " + x);
+		//System.out.println("Before: " + x);
+		x = unicodeOutlierMatcher.replaceAll(" ");
+		// System.out.println("After: " + x);
 		return x;
 	}
 

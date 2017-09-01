@@ -11,8 +11,8 @@ true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_testNew.csv
 # -v 3
 #-F proviamo 0 1 3
 
-n1=18000
-n2=3500
+n1=8000
+n2=10000
 
 log=""
 for c in range(1,6):
@@ -30,9 +30,7 @@ for c in range(1,6):
     print f
 
 
-out_file = open("log.txt","w")
-out_file.write(log)
-out_file.close()
+
 
 #os.system("../svm/src/svm_learn -t 5 -C T  ../minimalpipeline-master/TreeKernel/train2.dat model2")
 #os.system("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test2.dat model2 output2.txt")
@@ -87,6 +85,15 @@ tK=np.append(tK, tKp5, axis=1)
 
 print "mean error:", mean_squared_error(true_values, mean_predictions)
 
-print "bow error:", mean_squared_error(true_values, bow_predictions)
+print "bow error:", mean_squared_error(true_valuesNew.head(n2), bow_predictions)
 
 print "tree Kernel error:", mean_squared_error(true_valuesNew.head(n2), tK)
+
+log = log + "bow error:"+ str(mean_squared_error(true_valuesNew.head(n2), bow_predictions)) + "\n"
+
+log = log + "tree Kernel error:" + str(mean_squared_error(true_valuesNew.head(n2), tK)) + "\n"
+
+
+out_file = open("log.txt","w")
+out_file.write(log)
+out_file.close()
