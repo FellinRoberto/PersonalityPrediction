@@ -42,10 +42,10 @@ import cc.mallet.types.Alphabet;
 import cc.mallet.types.FeatureVector;
 
 import com.google.common.base.Joiner;
-import com.vdurmont.emoji.EmojiParser;
+//import com.vdurmont.emoji.EmojiParser;
 
-import au.com.bytecode.opencsv.CSVReader;
-import au.com.bytecode.opencsv.CSVWriter;
+import com.opencsv.*;
+import de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.X;
 import de.tudarmstadt.ukp.dkpro.core.opennlp.OpenNlpPosTagger;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordLemmatizer;
 import de.tudarmstadt.ukp.dkpro.core.stanfordnlp.StanfordNamedEntityRecognizer;
@@ -67,19 +67,22 @@ public class PersonalityPrediction {
 		/**
 		 * Instantiate a more complex multi-pipeline
 		 */
+		CSVParser parser = new CSVParser(CSVParser.DEFAULT_SEPARATOR, CSVParser.DEFAULT_QUOTE_CHARACTER, '\0', CSVParser.DEFAULT_STRICT_QUOTES);
 
 
-		CSVReader X_train = new CSVReader(new FileReader("../dataset/X_train.csv"));
+		CSVReader X_train = new CSVReader(new FileReader("../dataset/X_train.csv"), 0, parser);
 		CSVReader Y_train = new CSVReader(new FileReader("../dataset/y_train.csv"));
-		CSVReader X_test = new CSVReader(new FileReader("../dataset/x_validation.csv"));
+		CSVReader X_test = new CSVReader(new FileReader("../dataset/x_validation.csv"), 0, parser);
 		CSVReader Y_test = new CSVReader(new FileReader("../dataset/y_validation.csv"));
+		
 		//Scanner X_train = new Scanner(new File("../dataset/X_train.csv"), "ISO-8859-1");
-
+		
+	
 		// TRAIN
 		int i=1;
 
 
-		ArrayList<String> resultTrain = treeKernel(0, X_train, Y_train, 15, 20000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTrain = treeKernel(0, X_train, Y_train, 15, 4000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 
 
 		for (String r: resultTrain) {        
@@ -91,7 +94,7 @@ public class PersonalityPrediction {
 		}
 
 		// TEST
-		ArrayList<String> resultTest = treeKernel(1, X_test, Y_test, 15, 15000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		ArrayList<String> resultTest = treeKernel(1, X_test, Y_test, 15, 2000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		i=1;
 		for (String r: resultTest) {        
 			r = r.substring(0, r.length() - 1);// to delete the last /n
@@ -131,18 +134,16 @@ public class PersonalityPrediction {
 		ArrayList<String> result = new ArrayList<String>();
 		Analyzer analyzer = instantiateTrecAnalyzer(new UIMANoPersistence());
 		String [] nextLineX = null;
-
 		int count = 0;
 		while ((nextLineX = X.readNext()) != null && count<numberOfRowRead) {
-
 			String x = nextLineX[0];
 			x=x.replaceAll("\\.+","."); // delete all dots and transform into a single dot
 			String before = x;
 			x= parserEmoji (x);
-			System.out.println("Before: " + before);
+			//System.out.println("Before: " + before);
 			if (!x.equals(before)) {
 
-				System.out.println(" After: " + x);
+				//System.out.println(" After: " + x);
 			}
 
 			boolean check=true;
@@ -155,7 +156,7 @@ public class PersonalityPrediction {
 
 				// check if there are phrase with more that maxWord word
 				if (s.trim().split("\\s+").length>maxWord || s.trim().split("\\s+").length<minWord) {
-					System.out.println("ENTRATO!!!!\n \n \n"); 
+					//System.out.println("ENTRATO!!!!\n \n \n"); 
 					check=false;
 					break;
 				}
@@ -236,7 +237,7 @@ public class PersonalityPrediction {
 						count++;
 						System.out.print(count+"\n");
 					} else {
-						System.out.print("ROOT: "+x+" "+treekernel);
+						//System.out.print("ROOT: "+x+" "+treekernel);
 					}
 				}catch (OutOfMemoryError e) {
 					System.err.println("Caught OutOfMemoryError: " + e.getMessage());
