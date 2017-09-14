@@ -14,14 +14,14 @@ Optimizing......................................................................
  Number of inactive variables = 611
 done. (787 iterations)
 Optimization finished (127 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 3.35
+Runtime in cpu-seconds: 3.56
 Number of SV: 1980 (including 653 at upper bound)
 L1 loss: loss=511.15239
 Norm of weight vector: |w|=27.21047
 Norm of longest example vector: |x|=1.00000
 Estimated VCdim of classifier: VCdim<=741.40992
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=32.65% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>97.96% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>68.29% (rho=1.00,depth=0)
@@ -31,7 +31,7 @@ Writing model file...done
 LEGGO IL MODELLO
 Reading model...OK. (1980 support vectors read)
 Classifying test examples..100..200..300..400..500..600..700..800..900..1000..done
-Runtime (without IO) in cpu-seconds: 3.18
+Runtime (without IO) in cpu-seconds: 3.28
 Accuracy on test set: 70.90% (709 correct, 291 incorrect, 1000 total)
 Precision/recall on test set: 70.98%/99.72%
 F1-measure on test set: 82.93%
@@ -52,7 +52,7 @@ Optimizing......................................................................
  Number of inactive variables = 966
 done. (641 iterations)
 Optimization finished (59 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 3.50
+Runtime in cpu-seconds: 3.35
 Number of SV: 1982 (including 1021 at upper bound)
 L1 loss: loss=471.82095
 Norm of weight vector: |w|=34.35062
@@ -69,7 +69,7 @@ Writing model file...done
 LEGGO IL MODELLO
 Reading model...OK. (1982 support vectors read)
 Classifying test examples..100..200..300..400..500..600..700..800..900..1000..done
-Runtime (without IO) in cpu-seconds: 3.15
+Runtime (without IO) in cpu-seconds: 3.39
 Accuracy on test set: 53.70% (537 correct, 463 incorrect, 1000 total)
 Precision/recall on test set: 43.14%/4.82%
 F1-measure on test set: 8.68%
@@ -90,14 +90,14 @@ Optimizing......................................................................
  Number of inactive variables = 904
 done. (694 iterations)
 Optimization finished (74 misclassified, maxdiff=0.00092).
-Runtime in cpu-seconds: 3.58
+Runtime in cpu-seconds: 3.55
 Number of SV: 1995 (including 965 at upper bound)
 L1 loss: loss=524.71742
 Norm of weight vector: |w|=33.51498
 Norm of longest example vector: |x|=1.00000
 Estimated VCdim of classifier: VCdim<=1124.25390
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=48.25% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>87.93% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>55.68% (rho=1.00,depth=0)
@@ -107,7 +107,7 @@ Writing model file...done
 LEGGO IL MODELLO
 Reading model...OK. (1995 support vectors read)
 Classifying test examples..100..200..300..400..500..600..700..800..900..1000..done
-Runtime (without IO) in cpu-seconds: 3.17
+Runtime (without IO) in cpu-seconds: 3.14
 Accuracy on test set: 56.40% (564 correct, 436 incorrect, 1000 total)
 Precision/recall on test set: 56.48%/98.94%
 F1-measure on test set: 71.91%
@@ -128,7 +128,7 @@ Optimizing......................................................................
  Number of inactive variables = 1169
 done. (528 iterations)
 Optimization finished (42 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 3.43
+Runtime in cpu-seconds: 3.33
 Number of SV: 1990 (including 1273 at upper bound)
 L1 loss: loss=438.85263
 Norm of weight vector: |w|=37.03373
@@ -145,7 +145,7 @@ Writing model file...done
 LEGGO IL MODELLO
 Reading model...OK. (1990 support vectors read)
 Classifying test examples..100..200..300..400..500..600..700..800..900..1000..done
-Runtime (without IO) in cpu-seconds: 3.13
+Runtime (without IO) in cpu-seconds: 3.19
 Accuracy on test set: 48.10% (481 correct, 519 incorrect, 1000 total)
 Precision/recall on test set: 50.80%/54.17%
 F1-measure on test set: 52.43%
@@ -166,7 +166,7 @@ Optimizing......................................................................
  Number of inactive variables = 409
 done. (798 iterations)
 Optimization finished (157 misclassified, maxdiff=0.00096).
-Runtime in cpu-seconds: 3.34
+Runtime in cpu-seconds: 3.33
 Number of SV: 1867 (including 321 at upper bound)
 L1 loss: loss=330.90821
 Norm of weight vector: |w|=17.63786
@@ -183,7 +183,7 @@ Writing model file...done
 LEGGO IL MODELLO
 Reading model...OK. (1867 support vectors read)
 Classifying test examples..100..200..300..400..500..600..700..800..900..1000..done
-Runtime (without IO) in cpu-seconds: 2.97
+Runtime (without IO) in cpu-seconds: 2.94
 Accuracy on test set: 81.50% (815 correct, 185 incorrect, 1000 total)
 Precision/recall on test set: -nan%/0.00%
 F1-measure on test set: -nan%
