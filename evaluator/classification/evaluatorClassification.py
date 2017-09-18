@@ -6,8 +6,8 @@ import numpy as np
 # -v 3
 #-F proviamo 0 1 3
 
-n1=2000
-n2=1000
+n1=500
+n2=2000
 
 log=""
 for c in range(1,6):
@@ -17,7 +17,7 @@ for c in range(1,6):
     os.system("head -" + str(n2) + " test" + str(
         c) + "C.dat > test" + str(c) + "b.dat")
 
-    f=os.popen("../../svm/src/svm_learn -t 5 -C T  train" + str(c) + "b.dat model"+str(c))
+    f=os.popen("../../svm/src/svm_learn -t 5 -C T train" + str(c) + "b.dat model"+str(c))
     f=f.read()
     log = log + f + "\n"
     print f
