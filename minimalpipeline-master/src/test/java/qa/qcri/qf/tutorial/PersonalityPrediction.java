@@ -3,6 +3,7 @@ package qa.qcri.qf.tutorial;
 import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescription;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -74,43 +75,39 @@ public class PersonalityPrediction {
 		CSVReader Y_train = new CSVReader(new FileReader("../dataset/y_train.csv"));
 		CSVReader X_test = new CSVReader(new FileReader("../dataset/x_validation.csv"), 0, parser);
 		CSVReader Y_test = new CSVReader(new FileReader("../dataset/y_validation.csv"));
-		
+
 		//Scanner X_train = new Scanner(new File("../dataset/X_train.csv"), "ISO-8859-1");
-		
-	
+
+
 		// TRAIN
-		int i=1;
 
 
-		ArrayList<String> resultTrain = treeKernel(0, X_train, Y_train, 15, 4000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		for (int i=1; i<6;i++) {        
 
+			try(  PrintWriter out = new PrintWriter( "TreeKernel/train"+i+".dat" )  ){}
 
-		for (String r: resultTrain) {        
-			r = r.substring(0, r.length() - 1);// to delete the last /n
-			try(  PrintWriter out = new PrintWriter( "TreeKernel/train"+i+".dat" )  ){
-				out.println( r );
-			}
-			i++;
+			try(  PrintWriter out = new PrintWriter( "TreeKernel/test"+i+".dat" )  ){}
+			
 		}
+		
+		try(  PrintWriter out = new PrintWriter( "TreeKernel/x_testNew.csv" )  ){}
+		try(  PrintWriter out = new PrintWriter( "TreeKernel/x_trainNew.csv" )  ){}
+		try(  PrintWriter out = new PrintWriter( "TreeKernel/y_testNew.csv" )  ){}
+		try(  PrintWriter out = new PrintWriter( "TreeKernel/y_trainNew.csv" )  ){}
+		treeKernel("train",20,100,X_train, Y_train, 15, 4, 3); // where to save, how frequently write on file, dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+
+
 
 		// TEST
-		ArrayList<String> resultTest = treeKernel(1, X_test, Y_test, 15, 2000, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
-		i=1;
-		for (String r: resultTest) {        
-			r = r.substring(0, r.length() - 1);// to delete the last /n
-			try(  PrintWriter out = new PrintWriter( "TreeKernel/test"+i+".dat" )  ){
-				out.println( r );
-			}
-			i++;
-		}
-
+		treeKernel("test",20,100, X_test, Y_test, 15, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		
 
 		/*String str = "An 😀awesome 😃string with a few 😉emojis!";
-		String result = EmojiParser.parseToAliases(str);
-		System.out.println(result);*/
+			String result = EmojiParser.parseToAliases(str);
+			System.out.println(result);*/
 	}
 
-	private static ArrayList<String> treeKernel(int w, CSVReader X, CSVReader Y, int maxWord, int numberOfRowRead, int maxPhrase, int minWord) throws UIMAException, IOException, SAXException, TikaException {
+	private static void treeKernel(String type, int w, int numberOfRowRead, CSVReader X, CSVReader Y, int maxWord, int maxPhrase, int minWord) throws UIMAException, IOException, SAXException, TikaException {
 		X.readNext();
 		Y.readNext();
 		String r1="";
@@ -118,24 +115,16 @@ public class PersonalityPrediction {
 		String r3="";
 		String r4="";
 		String r5="";
-		CSVWriter writerTest = null;
-		CSVWriter writerXTest = null;
-		CSVWriter writerXTrain = null;
-		CSVWriter writerTrain = null;
-		if (w==1) {
-			writerTest = new CSVWriter(new FileWriter("TreeKernel/y_testNew.csv",false),',','\0');
-			writerXTest = new CSVWriter(new FileWriter("TreeKernel/x_testNew.csv"));
 		
-		}else {
-			writerXTrain = new CSVWriter(new FileWriter("TreeKernel/x_trainNew.csv"));
-			writerTrain = new CSVWriter(new FileWriter("TreeKernel/y_trainNew.csv",false),',','\0');
-		}
-
 		ArrayList<String> result = new ArrayList<String>();
 		Analyzer analyzer = instantiateTrecAnalyzer(new UIMANoPersistence());
 		String [] nextLineX = null;
-		int count = 0;
-		while ((nextLineX = X.readNext()) != null && count<numberOfRowRead) {
+		int countCorrect = 0;
+		int tot = 0;
+		
+		ArrayList<String[]> listX = new ArrayList<String[]>();
+		ArrayList<String[]> listPrediciton = new ArrayList<String[]>();
+		while ((nextLineX = X.readNext()) != null && countCorrect<numberOfRowRead) {
 			String x = nextLineX[0];
 			x=x.replaceAll("\\.+","."); // delete all dots and transform into a single dot
 			String before = x;
@@ -217,53 +206,94 @@ public class PersonalityPrediction {
 						r5+=prediction[4]+" |BT| "+treekernel+" |ET|\n";
 
 						//String[] entries = prediction[0]+"#"+prediction[0]+"#"+prediction[3]+"#"+prediction[4]+"#"+prediction[5].split("#");
+						
 						String [] out = new String[1];
 						out[0]=x;
-						if (w==1) {
-							writerTest.writeNext(prediction);
-							//String [] country = x.split("#");
-							
-							writerXTest.writeNext(out);
-						}
+						listX.add(out);
+						listPrediciton.add(prediction);
 
-						else {
-							writerTrain.writeNext(prediction);
-							
-							
-							writerXTrain.writeNext(out);
-
-						}
-						//System.out.print("out: "+out[0]+"\n");
-						count++;
-						System.out.print(count+"\n");
-					} else {
-						//System.out.print("ROOT: "+x+" "+treekernel);
+						System.out.print(treekernel+"\n");
+						countCorrect++;
+						System.out.print(countCorrect+"/"+tot+"\n");
 					}
 				}catch (OutOfMemoryError e) {
 					System.err.println("Caught OutOfMemoryError: " + e.getMessage());
 				}
-			}
-			else {
+
 
 			}
+			tot++;
+			
 
+			if (countCorrect%w==0 && countCorrect!=0 && r1!="") {
+				System.out.print("entrato \n");
+				result.add(r1);
+				result.add(r2);
+				result.add(r3);
+				result.add(r4);
+				result.add(r5);
+				writeOnFile(result,type);
+				result = new ArrayList<String>();
+				r1="";
+				r2="";
+				r3="";
+				r4="";
+				r5="";
+				
+				writeOnNewFile(listX, listPrediciton, type);
+				listX = new ArrayList<String[]>();
+				listPrediciton = new ArrayList<String[]>();
+			
+			}
 		}
 		X.close();
-		if (w==1) {
-			writerXTest.close();
-			writerTest.close();}
-		else {
-		
-		writerXTrain.close();
-		writerTrain.close();
-		}
+
 		result.add(r1);
 		result.add(r2);
 		result.add(r3);
 		result.add(r4);
 		result.add(r5);
-		return result;
+		if (r1!="") {
+		writeOnFile(result,type);
+		writeOnNewFile(listX, listPrediciton,type);
+		}
+		result = new ArrayList<String>();
+		r1="";
+		r2="";
+		r3="";
+		r4="";
+		r5="";
+		
 	}
+
+	private static void writeOnNewFile(ArrayList<String[]> listX, ArrayList<String[]> listPrediciton, String type) throws IOException {
+		CSVWriter writerX = new CSVWriter(new FileWriter("TreeKernel/y_"+type+"New.csv", true),',','\0');
+		CSVWriter writer = new CSVWriter(new FileWriter("TreeKernel/x_"+type+"New.csv",true));
+	
+		writer.writeAll(listX);
+	
+		writerX.writeAll(listPrediciton);
+
+		writerX.close();
+		writer.close();
+	}
+
+	private static void writeOnFile(ArrayList<String> result, String type) throws FileNotFoundException {
+		int i=1;
+		for (String r: result) {   
+			if (r.length()>0) {
+				r = r.substring(0, r.length() - 1);// to delete the last /n
+			}
+			
+			try(  PrintWriter out = new PrintWriter(new FileOutputStream(new File("TreeKernel/"+type+i+".dat"), true))){
+				out.println( r );
+			}
+			
+			i++;
+		}
+	}
+	
+
 
 	private static String parserEmoji(String x) {
 		try {
