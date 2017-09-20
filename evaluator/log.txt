@@ -1,20 +1,122 @@
 MODEL1
  
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
 
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Setting default regularization parameter C=1.0000
+Optimizing...........................done. (28 iterations)
+Optimization finished (maxdiff=0.00069).
+Runtime in cpu-seconds: 0.02
+Number of SV: 88 (including 13 at upper bound)
+L1 loss: loss=4.16455
+Norm of weight vector: |w|=5.53750
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 16921
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (88 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.03
 
 MODEL2
  
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
 
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Setting default regularization parameter C=1.0000
+Optimizing.............................done. (30 iterations)
+Optimization finished (maxdiff=0.00078).
+Runtime in cpu-seconds: 0.03
+Number of SV: 89 (including 19 at upper bound)
+L1 loss: loss=8.20712
+Norm of weight vector: |w|=6.19707
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 17146
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (89 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.01
 
 MODEL3
  
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
 
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Setting default regularization parameter C=1.0000
+Optimizing...........................done. (28 iterations)
+Optimization finished (maxdiff=0.00073).
+Runtime in cpu-seconds: 0.03
+Number of SV: 90 (including 24 at upper bound)
+L1 loss: loss=9.03713
+Norm of weight vector: |w|=6.02851
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 17150
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (90 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.02
 
 MODEL4
  
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
 
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Setting default regularization parameter C=1.0000
+Optimizing..........................done. (27 iterations)
+Optimization finished (maxdiff=0.00082).
+Runtime in cpu-seconds: 0.03
+Number of SV: 90 (including 14 at upper bound)
+L1 loss: loss=5.87251
+Norm of weight vector: |w|=5.49833
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 17095
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (90 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.01
 
 MODEL5
  
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
 
+Number of examples: 100, linear space size: 10
 
+learn_parm.type=2
+Setting default regularization parameter C=1.0000
+Optimizing........................done. (25 iterations)
+Optimization finished (maxdiff=0.00087).
+Runtime in cpu-seconds: 0.03
+Number of SV: 87 (including 23 at upper bound)
+L1 loss: loss=9.04034
+Norm of weight vector: |w|=5.85056
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 16640
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (87 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.01
+
+bow error:0.689329800758
+tree Kernel error:0.563352562523

@@ -8,8 +8,8 @@ import xgboost as xgb
 #x_test = pd.read_csv('../dataset/X_test.csv', engine='c', encoding='latin-1')
 #y_train = pd.read_csv('../dataset/y_train.csv', engine='c', encoding='latin-1')
 
-n1=8000
-n2=10000
+n1=100
+n2=100
 
 x_train = pd.read_csv('../minimalpipeline-master/TreeKernel/x_trainNew.csv', engine='c', encoding='latin-1',header=None)
 x_test = pd.read_csv('../minimalpipeline-master/TreeKernel/x_testNew.csv', engine='c', encoding='latin-1',header=None)
