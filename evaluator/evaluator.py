@@ -11,8 +11,8 @@ true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_testNew.csv
 # -v 3
 #-F proviamo 0 1 3
 
-n1=100
-n2=100
+n1=20000
+n2=10000
 
 log=""
 for c in range(1,6):
