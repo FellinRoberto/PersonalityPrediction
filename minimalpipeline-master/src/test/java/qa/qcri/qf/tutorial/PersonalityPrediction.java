@@ -94,12 +94,12 @@ public class PersonalityPrediction {
 		try(  PrintWriter out = new PrintWriter( "TreeKernel/x_trainNew.csv" )  ){}
 		try(  PrintWriter out = new PrintWriter( "TreeKernel/y_testNew.csv" )  ){}
 		try(  PrintWriter out = new PrintWriter( "TreeKernel/y_trainNew.csv" )  ){}
-		treeKernel("train",20,100,X_train, Y_train, 15, 4, 3); // where to save, how frequently write on file, dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		treeKernel("train",100,60000,X_train, Y_train, 15, 4, 3); // where to save, how frequently write on file, dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 
 
 
 		// TEST
-		treeKernel("test",20,100, X_test, Y_test, 15, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		treeKernel("test",100,10000, X_test, Y_test, 15, 4, 3); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		
 
 		/*String str = "An 😀awesome 😃string with a few 😉emojis!";
