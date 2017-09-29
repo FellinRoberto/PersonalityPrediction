@@ -1,0 +1,190 @@
+MODEL1
+ 
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..OK. (2000 examples read)
+
+Number of examples: 2000, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Setting default regularization parameter C=1.0000
+Optimizing................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 576
+done. (769 iterations)
+Optimization finished (117 misclassified, maxdiff=0.00092).
+Runtime in cpu-seconds: 4.16
+Number of SV: 1974 (including 671 at upper bound)
+L1 loss: loss=509.12871
+Norm of weight vector: |w|=27.35044
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=749.04676
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=33.55% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>96.79% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>67.91% (rho=1.00,depth=0)
+Number of kernel evaluations: 2068886
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (1974 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 35.61
+Accuracy on test set: 70.82% (7082 correct, 2918 incorrect, 10000 total)
+Precision/recall on test set: 70.90%/99.75%
+F1-measure on test set: 82.88%
+
+MODEL2
+ 
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..OK. (2000 examples read)
+
+Number of examples: 2000, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Setting default regularization parameter C=1.0000
+Optimizing..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 1088
+done. (595 iterations)
+Optimization finished (47 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 3.81
+Number of SV: 1981 (including 1178 at upper bound)
+L1 loss: loss=415.75992
+Norm of weight vector: |w|=36.71374
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=1348.89843
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=58.90% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>14.60% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>24.13% (rho=1.00,depth=0)
+Number of kernel evaluations: 2059508
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (1981 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 34.83
+Accuracy on test set: 54.03% (5403 correct, 4597 incorrect, 10000 total)
+Precision/recall on test set: 47.81%/23.58%
+F1-measure on test set: 31.58%
+
+MODEL3
+ 
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..OK. (2000 examples read)
+
+Number of examples: 2000, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Setting default regularization parameter C=1.0000
+Optimizing.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 1000
+done. (632 iterations)
+Optimization finished (65 misclassified, maxdiff=0.00098).
+Runtime in cpu-seconds: 4.22
+Number of SV: 1968 (including 1036 at upper bound)
+L1 loss: loss=462.08690
+Norm of weight vector: |w|=34.72488
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=1206.81762
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+XiAlpha-estimate of the error: error<=51.80% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>81.51% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>53.59% (rho=1.00,depth=0)
+Number of kernel evaluations: 2061284
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (1968 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 34.64
+Accuracy on test set: 51.59% (5159 correct, 4841 incorrect, 10000 total)
+Precision/recall on test set: 52.14%/92.69%
+F1-measure on test set: 66.74%
+
+MODEL4
+ 
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..OK. (2000 examples read)
+
+Number of examples: 2000, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Setting default regularization parameter C=1.0000
+Optimizing....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 1180
+done. (533 iterations)
+Optimization finished (22 misclassified, maxdiff=0.00095).
+Runtime in cpu-seconds: 3.91
+Number of SV: 1993 (including 1249 at upper bound)
+L1 loss: loss=434.79488
+Norm of weight vector: |w|=37.00390
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=1370.28898
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+XiAlpha-estimate of the error: error<=62.45% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>58.03% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>43.52% (rho=1.00,depth=0)
+Number of kernel evaluations: 2056224
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (1993 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 34.05
+Accuracy on test set: 52.69% (5269 correct, 4731 incorrect, 10000 total)
+Precision/recall on test set: 55.84%/73.64%
+F1-measure on test set: 63.52%
+
+MODEL5
+ 
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..OK. (2000 examples read)
+
+Number of examples: 2000, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Setting default regularization parameter C=1.0000
+Optimizing.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 244
+done. (822 iterations)
+Optimization finished (174 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 3.87
+Number of SV: 1899 (including 314 at upper bound)
+L1 loss: loss=328.26350
+Norm of weight vector: |w|=17.31338
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=300.75309
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=15.70% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>0.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>-nan% (rho=1.00,depth=0)
+Number of kernel evaluations: 2067196
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (1899 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 34.85
+Accuracy on test set: 83.19% (8319 correct, 1681 incorrect, 10000 total)
+Precision/recall on test set: -nan%/0.00%
+F1-measure on test set: -nan%
+
