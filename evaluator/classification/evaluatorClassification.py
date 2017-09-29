@@ -6,8 +6,8 @@ import numpy as np
 # -v 3
 #-F proviamo 0 1 3
 
-n1=500
-n2=2000
+n1=10000
+n2=10000
 
 log=""
 for c in range(1,6):

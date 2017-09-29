@@ -1,6 +1,6 @@
 result=""
 for i in range(1,6):
-    with open('../../minimalpipeline-master/TreeKernel/treeKernels4000-2000_fixed/train'+str(i)+'.dat') as fp:
+    with open('../../minimalpipeline-master/TreeKernel/train'+str(i)+'.dat') as fp:
         for line in fp:
             x = line.split(" ")[0]
 
@@ -23,7 +23,7 @@ for i in range(1,6):
 
 result=""
 for i in range(1,6):
-    with open('../../minimalpipeline-master/TreeKernel/treeKernels4000-2000_fixed/test'+str(i)+'.dat') as fp:
+    with open('../../minimalpipeline-master/TreeKernel/test'+str(i)+'.dat') as fp:
         for line in fp:
             x = line.split(" ")[0]
 
