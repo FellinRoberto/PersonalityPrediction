@@ -11,7 +11,7 @@ true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_testNew.csv
 # -v 3
 #-F proviamo 0 1 3
 
-n1=100
+n1=10
 n2=10000
 
 log=""
@@ -20,7 +20,7 @@ for c in range(1,6):
     os.system("head -" + str(n1) + " ../minimalpipeline-master/TreeKernel/train" + str(c) + ".dat > ../minimalpipeline-master/TreeKernel/train" + str(c) + "b.dat")
     os.system("head -" + str(n2) + " ../minimalpipeline-master/TreeKernel/test" + str(c) + ".dat > ../minimalpipeline-master/TreeKernel/test" + str(c) + "b.dat")
 
-    f=os.popen("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train" + str(c) + "b.dat model"+str(c))
+    f=os.popen("../svm/src/svm_learn -t 5 -c 0.001 -C T -z r  ../minimalpipeline-master/TreeKernel/train" + str(c) + "b.dat model"+str(c))
     f=f.read()
     log = log + f + "\n"
     print f
