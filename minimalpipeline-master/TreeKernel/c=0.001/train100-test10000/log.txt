@@ -1,0 +1,117 @@
+MODEL1
+ 
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
+
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Optimizing..............................................done. (47 iterations)
+Optimization finished (maxdiff=0.00042).
+Runtime in cpu-seconds: 0.08
+Number of SV: 91 (including 89 at upper bound)
+L1 loss: loss=48.70579
+Norm of weight vector: |w|=0.00975
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 18632
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (91 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 1.14
+
+MODEL2
+ 
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
+
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Optimizing..........................................done. (43 iterations)
+Optimization finished (maxdiff=0.00000).
+Runtime in cpu-seconds: 0.07
+Number of SV: 82 (including 82 at upper bound)
+L1 loss: loss=57.15152
+Norm of weight vector: |w|=0.00886
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 18170
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (82 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 1.00
+
+MODEL3
+ 
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
+
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Optimizing............................................done. (45 iterations)
+Optimization finished (maxdiff=0.00020).
+Runtime in cpu-seconds: 0.08
+Number of SV: 87 (including 85 at upper bound)
+L1 loss: loss=55.67838
+Norm of weight vector: |w|=0.00905
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 18510
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (87 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 1.06
+
+MODEL4
+ 
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
+
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Optimizing...........................................done. (44 iterations)
+Optimization finished (maxdiff=0.00026).
+Runtime in cpu-seconds: 0.07
+Number of SV: 85 (including 83 at upper bound)
+L1 loss: loss=47.22122
+Norm of weight vector: |w|=0.00888
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 18015
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (85 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 1.03
+
+MODEL5
+ 
+Scanning examples...done
+Reading examples into memory...100..OK. (100 examples read)
+
+Number of examples: 100, linear space size: 10
+
+learn_parm.type=2
+Optimizing..........................................done. (43 iterations)
+Optimization finished (maxdiff=0.00055).
+Runtime in cpu-seconds: 0.06
+Number of SV: 84 (including 83 at upper bound)
+L1 loss: loss=54.82358
+Norm of weight vector: |w|=0.00930
+Norm of longest example vector: |x|=1.00000
+Number of kernel evaluations: 18176
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (84 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..5100..5200..5300..5400..5500..5600..5700..5800..5900..6000..6100..6200..6300..6400..6500..6600..6700..6800..6900..7000..7100..7200..7300..7400..7500..7600..7700..7800..7900..8000..8100..8200..8300..8400..8500..8600..8700..8800..8900..9000..9100..9200..9300..9400..9500..9600..9700..9800..9900..10000..done
+Runtime (without IO) in cpu-seconds: 1.03
+
+bow error:0.675242198493
+tree Kernel error:0.559529113513
