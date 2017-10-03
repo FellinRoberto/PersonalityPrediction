@@ -20,6 +20,7 @@
     <SUITE FILE_PATH="coverage/meanPrediction$learningCurveClassification.coverage" NAME="learningCurveClassification Coverage Results" MODIFIED="1506348387478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../evaluator/classification" />
     <SUITE FILE_PATH="coverage/meanPrediction$evaluator.coverage" NAME="evaluator Coverage Results" MODIFIED="1506679829570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../evaluator/dump-regressioneLinerare" />
     <SUITE FILE_PATH="coverage/meanPrediction$reduce.coverage" NAME="reduce Coverage Results" MODIFIED="1501321907597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../dataset" />
+    <SUITE FILE_PATH="coverage/meanPrediction$single_feature_plot.coverage" NAME="single_feature_plot Coverage Results" MODIFIED="1507043305006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../evaluator" />
     <SUITE FILE_PATH="coverage/meanPrediction$Unnamed.coverage" NAME="meanPersonality Coverage Results" MODIFIED="1500994628884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meanPrediction$classification.coverage" NAME="classification Coverage Results" MODIFIED="1505297914410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../evaluator" />
     <SUITE FILE_PATH="coverage/meanPrediction$learningCurve.coverage" NAME="learningCurve Coverage Results" MODIFIED="1506961736257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../evaluator" />
@@ -31,8 +32,8 @@
       <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../evaluator/evaluator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="141">
+              <caret line="93" column="81" lean-forward="false" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -42,17 +43,27 @@
         <entry file="file://$PROJECT_DIR$/../bow/bow_predictor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learningCurve.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="learningCurve.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../evaluator/learningCurve.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single_feature_plot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../evaluator/single_feature_plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -66,6 +77,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>true_valuesNew</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -85,6 +101,7 @@
         <option value="$PROJECT_DIR$/../bow/bow_predictor.py" />
         <option value="$PROJECT_DIR$/../evaluator/evaluator.py" />
         <option value="$PROJECT_DIR$/../evaluator/learningCurve.py" />
+        <option value="$PROJECT_DIR$/../evaluator/single_feature_plot.py" />
       </list>
     </option>
   </component>
@@ -135,7 +152,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../evaluator/learningCurve.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../evaluator/single_feature_plot.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,26 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.learningCurve">
-    <configuration default="false" name="classification (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../evaluator/classification" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="meanPrediction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../evaluator/classification/classification.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.single_feature_plot">
     <configuration default="false" name="evaluatorClassification (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -240,6 +238,25 @@
       <module name="meanPrediction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../evaluator/dump-regressioneLinerare/evaluator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="single_feature_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../evaluator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="meanPrediction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../evaluator/single_feature_plot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -514,19 +531,19 @@
       <item index="3" class="java.lang.String" itemvalue="Python.bow" />
       <item index="4" class="java.lang.String" itemvalue="Python.evaluetor" />
       <item index="5" class="java.lang.String" itemvalue="Python.learningCurve" />
-      <item index="6" class="java.lang.String" itemvalue="Python.classification (1)" />
-      <item index="7" class="java.lang.String" itemvalue="Python.evaluatorClassification (1)" />
-      <item index="8" class="java.lang.String" itemvalue="Python.learningCurveClassification" />
-      <item index="9" class="java.lang.String" itemvalue="Python.bow_predictor" />
-      <item index="10" class="java.lang.String" itemvalue="Python.evaluator" />
+      <item index="6" class="java.lang.String" itemvalue="Python.evaluatorClassification (1)" />
+      <item index="7" class="java.lang.String" itemvalue="Python.learningCurveClassification" />
+      <item index="8" class="java.lang.String" itemvalue="Python.bow_predictor" />
+      <item index="9" class="java.lang.String" itemvalue="Python.evaluator" />
+      <item index="10" class="java.lang.String" itemvalue="Python.single_feature_plot" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.evaluator" />
-        <item index="1" class="java.lang.String" itemvalue="Python.bow_predictor" />
-        <item index="2" class="java.lang.String" itemvalue="Python.evaluatorClassification (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.learningCurveClassification" />
-        <item index="4" class="java.lang.String" itemvalue="Python.classification (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.single_feature_plot" />
+        <item index="1" class="java.lang.String" itemvalue="Python.evaluator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.bow_predictor" />
+        <item index="3" class="java.lang.String" itemvalue="Python.evaluatorClassification (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.learningCurveClassification" />
       </list>
     </recent_temporary>
   </component>
@@ -585,13 +602,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/meanPrediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bow/bow_predictor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -893,9 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,22 +910,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bow/bow_predictor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../evaluator/evaluator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -926,7 +924,23 @@
     <entry file="file://$PROJECT_DIR$/../evaluator/learningCurve.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../evaluator/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="93" column="81" lean-forward="false" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../evaluator/single_feature_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>

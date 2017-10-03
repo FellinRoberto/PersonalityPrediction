@@ -11,10 +11,10 @@ import xgboost as xgb
 
 mean_predictions=pd.read_csv('../meanPrediction/y_pred.csv', engine='c')
 bow_predictions=pd.read_csv('../bow/bowPrediction.csv', engine='c', header=None)
-true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_testNew.csv', engine='c',header=None)
+true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_trainNew.csv', engine='c',header=None)
 #true_values = pd.read_csv('../dataset/y_test.csv', engine='c')
 
-personality_index = 4
+personality_index = 3
 n_trains =[10, 100, 500, 1000, 2000, 4000]
 n_test = 10000
 results=[]
