@@ -9,22 +9,30 @@ import numpy as np
 import xgboost as xgb
 #bow
 
-mean_predictions=pd.read_csv('../meanPrediction/y_pred.csv', engine='c')
-bow_predictions=pd.read_csv('../bow/bowPrediction.csv', engine='c', header=None)
-true_valuesNew = pd.read_csv('../minimalpipeline-master/TreeKernel/y_trainNew.csv', engine='c',header=None)
+mean_predictions=pd.read_csv('./../meanPrediction/y_pred.csv', engine='c')
+bow_predictions=pd.read_csv('./../bow/bowPrediction.csv', engine='c', header=None)
+true_valuesNew = pd.read_csv('./../minimalpipeline-master/TreeKernel/y_testNew.csv', engine='c',header=None)
 #true_values = pd.read_csv('../dataset/y_test.csv', engine='c')
 
-personality_index = 3
-n_trains =[10, 100, 500, 1000, 2000, 4000]
-n_test = 10000
+personality_index = 0
+n_trains =[100, 500,1000,2000,4000, 10000]
+n_test = 5000
 results=[]
+results_wrong=[]
 results_bow=[]
+results_bow_wrong=[]
+wrong_values = np.roll(true_valuesNew,2, axis=0)
+wrong_values = pd.DataFrame(wrong_values)
+#wrong=true_valuesNew.ix[1:(n_test-1),personality_index].set_value(10000,2.57)
+
+
 for i in range(0,len(n_trains)):
+    
 	n_train = n_trains[i]
 
 	os.system("head -" + str(n_train) + " ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1) + ".dat > ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1) + "b.dat")
 	os.system("head -" + str(n_test) + " ../minimalpipeline-master/TreeKernel/test" + str(personality_index+1) + ".dat > ../minimalpipeline-master/TreeKernel/test" + str(personality_index+1) + "b.dat")
-	f=os.popen("../svm/src/svm_learn -t 5 -c 0.001 -C T -z r  ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1)  + "b.dat model"+str(personality_index+1) )
+	f=os.popen("../svm/src/svm_learn -t 5 -c 1 -C T -z r  ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1)  + "b.dat model"+str(personality_index+1) )
 	print f.read()
 	os.popen("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test" + str(personality_index+1) + "b.dat model"+str(personality_index+1)+" output"+str(personality_index+1)+".txt")
 
@@ -36,9 +44,10 @@ for i in range(0,len(n_trains)):
 	#print "bow error:", mean_squared_error(true_values.ix[:,personality_index], bow_predictions.ix[:,personality_index])
 	#print "TreeKernel error:", mean_squared_error(true_valuesNew.ix[:999,personality_index], treeKernel_predictions.ix[:,0])
 	results.append(mean_squared_error(true_valuesNew.ix[:(n_test-1),personality_index], treeKernel_predictions.ix[:,0]))
+	results_wrong.append(mean_squared_error(wrong_values.ix[:(n_test-1),personality_index], treeKernel_predictions.ix[:,0]))
 	#print true_valuesNew.ix[0:4999,personality_index]
 	#print treeKernel_predictions.ix[:,0]
-
+    
 
 	########################################################################################################
 
@@ -46,7 +55,6 @@ for i in range(0,len(n_trains)):
 	#x_train = pd.read_csv('../dataset/X_train.csv', engine='c', encoding='latin-1')
 	#x_test = pd.read_csv('../dataset/X_test.csv', engine='c', encoding='latin-1')
 	#y_train = pd.read_csv('../dataset/y_train.csv', engine='c', encoding='latin-1')
-
 
 	x_train = pd.read_csv('../minimalpipeline-master/TreeKernel/x_trainNew.csv', engine='c', encoding='latin-1',header=None)
 	x_test = pd.read_csv('../minimalpipeline-master/TreeKernel/x_testNew.csv', engine='c', encoding='latin-1',header=None)
@@ -98,11 +106,14 @@ for i in range(0,len(n_trains)):
 	#prediction = np.column_stack((prediction, temp))
 
 	results_bow.append(mean_squared_error(true_valuesNew.ix[:(n_test-1),personality_index], temp))
+	results_bow_wrong.append(mean_squared_error(wrong_values.ix[:(n_test-1),personality_index], temp))
 
 	######################################################################################################################
 	
 	
-plt.plot(n_trains, results_bow, 'ro-', label="bow")
+plt.plot(n_trains, results_wrong, 'ro-', label="wrong")
+#plt.plot(n_trains, results_bow, 'go-', label="bow")
+#plt.plot(n_trains, results_bow_wrong, 'ro-', label="bow_wrong")
 
 #pipeline
 plt.plot(n_trains, results, 'bo-', label="treeKernel")
