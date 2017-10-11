@@ -1,2 +1,6 @@
 bow/tfidfTest.csv
 bow/tfidfTrain.csv
+dataset/X_train.csv
+dataset/y_train.csv
+dataset/X_test.csv
+dataset/y_test.csv

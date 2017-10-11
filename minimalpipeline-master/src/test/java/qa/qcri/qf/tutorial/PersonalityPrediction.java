@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.io.UnsupportedEncodingException;
 import java.util.regex.Matcher;
@@ -41,6 +42,7 @@ import qa.qcri.qf.trees.pruning.strategies.PruneIfNodeIsWithoutMetadata;
 import util.Stopwords;
 import cc.mallet.types.Alphabet;
 import cc.mallet.types.FeatureVector;
+import cc.mallet.util.CommandOption.List;
 
 import com.google.common.base.Joiner;
 //import com.vdurmont.emoji.EmojiParser;
@@ -73,8 +75,8 @@ public class PersonalityPrediction {
 
 		CSVReader X_train = new CSVReader(new FileReader("../dataset/X_train.csv"), 0, parser);
 		CSVReader Y_train = new CSVReader(new FileReader("../dataset/y_train.csv"));
-		CSVReader X_test = new CSVReader(new FileReader("../dataset/x_validation.csv"), 0, parser);
-		CSVReader Y_test = new CSVReader(new FileReader("../dataset/y_validation.csv"));
+		CSVReader X_test = new CSVReader(new FileReader("../dataset/X_test.csv"), 0, parser);
+		CSVReader Y_test = new CSVReader(new FileReader("../dataset/y_test.csv"));
 
 		//Scanner X_train = new Scanner(new File("../dataset/X_train.csv"), "ISO-8859-1");
 
@@ -95,12 +97,12 @@ public class PersonalityPrediction {
 		try(  PrintWriter out = new PrintWriter( "TreeKernel/y_testNew.csv" )  ){}
 		try(  PrintWriter out = new PrintWriter( "TreeKernel/y_trainNew.csv" )  ){}
 		
-		treeKernel("train",100,1000,X_train, Y_train, 10, 4, 5); // where to save, how frequently write on file, dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		treeKernel("train",100,2000,X_train, Y_train, 5, 5, 15); // where to save, how frequently write on file, dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 
 
 
 		// TEST
-		treeKernel("test",100,1000, X_test, Y_test, 10, 4, 5); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
+		treeKernel("test",100,1000, X_test, Y_test, 5, 5, 15); // dataset, dataset, max number of word for each phrase delimited by dot, number of row used of the dataset(use big number to use entire dataset), max number of phrase
 		
 
 		/*String str = "An 😀awesome 😃string with a few 😉emojis!";
@@ -108,7 +110,7 @@ public class PersonalityPrediction {
 			System.out.println(result);*/
 	}
 
-	private static void treeKernel(String type, int w, int numberOfRowRead, CSVReader X, CSVReader Y, int maxWord, int maxPhrase, int minWord) throws UIMAException, IOException, SAXException, TikaException {
+	private static void treeKernel(String type, int w, int numberOfRowRead, CSVReader X, CSVReader Y, int maxPhrase, int minWord, int maxWord) throws UIMAException, IOException, SAXException, TikaException {
 		X.readNext();
 		Y.readNext();
 		String r1="";
@@ -136,28 +138,37 @@ public class PersonalityPrediction {
 				//System.out.println(" After: " + x);
 			}
 
-			boolean check=true;
-			String[] split = x.split("\\.");
-
-			if (split.length>maxPhrase) {
-				check=false;
-			}
+			
+			String[] split = x.split("\\. ");
+			
+			ArrayList<String> correct = new ArrayList<String>();
 			for (String s: split) {           
 
 				// check if there are phrase with more that maxWord word
-				if (s.trim().split("\\s+").length>maxWord || s.trim().split("\\s+").length<minWord) {
+				if (s.trim().split("\\s+").length<maxWord && s.trim().split("\\s+").length>minWord) {
 					//System.out.println("ENTRATO!!!!\n \n \n"); 
-					check=false;
+					correct.add(s);
+				
+				}
+				if (correct.size()==maxPhrase) {
 					break;
 				}
 			}
+			x=String.join(". ", correct.toArray(new String[correct.size()]));
 
+			/*System.out.println(x1);
+			System.out.println(x);
+			if (x1.equals(x)) {
+				System.out.println("UGUALE");
+				
+			}*/
 			LanguageIdentifier identifier = new LanguageIdentifier(x);
 			String language = identifier.getLanguage();
 
+			
 
 			String[] prediction = Y.readNext();
-			if (check && language.equals("en")) {
+			if (correct.size()==maxPhrase && language.equals("en")) {
 				try {
 					Analyzable post = new SimpleContent("post", x);
 

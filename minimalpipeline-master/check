@@ -1,0 +1,5 @@
+
+grep 'until school's over' user_status.sorted.csv | tr ':' ' '
+
+grep '50d6e7dbcf3c8b5a1e4b38e1a725fadf' big5.sorted.csv | tr ':' ' '
+
