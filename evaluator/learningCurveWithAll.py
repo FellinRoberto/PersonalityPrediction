@@ -4,11 +4,9 @@ import os
 import matplotlib.pyplot as plt
 
 from sklearn.feature_extraction.text import TfidfVectorizer
-import csv
 import numpy as np
 import xgboost as xgb
 
-# bow
 
 mean_predictions = pd.read_csv('./../meanPrediction/y_pred.csv', engine='c')
 bow_predictions = pd.read_csv('./../bow/bowPrediction.csv', engine='c', header=None)
@@ -18,7 +16,13 @@ matrix = pd.read_csv('./../minimalpipeline-master/TreeKernel/y_trainNew.csv', en
 
 personality_index = 3
 n_trains = [50, 100, 500, 1000, 2000]
+
 n_test = 1000
+
+predictionMean = []
+predictionTreeKernel = []
+predictionBow = []
+
 resultMean = []
 results = []
 results_wrong = []
@@ -28,16 +32,21 @@ wrong_values = np.roll(true_valuesNew, 2, axis=0)
 wrong_values = pd.DataFrame(wrong_values)
 # wrong=true_valuesNew.ix[1:(n_test-1),personality_index].set_value(10000,2.57)
 
+################################################################################
+#MEAN
 
 for i in range(0,len(n_trains)):
     x= matrix.head(n_trains[i])
     x = x.mean()
     x = pd.DataFrame(x)
     x = x.transpose()
+    print x
     x = pd.concat([x] * n_test)
+    predictionMean.append(x[x.columns[personality_index]])
     resultMean.append(mean_squared_error(true_valuesNew.ix[:(n_test - 1), personality_index], x[x.columns[personality_index]]))
 
-
+################################################################################
+#TREEKERNEL
 for i in range(0, len(n_trains)):
     n_train = n_trains[i]
 
@@ -47,7 +56,7 @@ for i in range(0, len(n_trains)):
     os.system("head -" + str(n_test) + " ../minimalpipeline-master/TreeKernel/test" + str(
         personality_index + 1) + ".dat > ../minimalpipeline-master/TreeKernel/test" + str(
         personality_index + 1) + "b.dat")
-    f = os.popen("../svm/src/svm_learn -t 5 -c 1 -C T -F 1 -z r  ../minimalpipeline-master/TreeKernel/train" + str(
+    f = os.popen("../svm/src/svm_learn -t 5 -c 10 -C T -F 3 -z r  ../minimalpipeline-master/TreeKernel/train" + str(
         personality_index + 1) + "b.dat model" + str(personality_index + 1))
     print f.read()
     os.popen("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test" + str(
@@ -61,6 +70,7 @@ for i in range(0, len(n_trains)):
     results_wrong.append(
         mean_squared_error(wrong_values.ix[:(n_test - 1), personality_index], treeKernel_predictions.ix[:, 0]))
 
+    predictionTreeKernel.append(treeKernel_predictions.ix[:, 0])
     ########################################################################################################
 
 
@@ -93,8 +103,9 @@ for i in range(0, len(n_trains)):
     results_bow.append(mean_squared_error(true_valuesNew.ix[:(n_test - 1), personality_index], temp))
     results_bow_wrong.append(mean_squared_error(wrong_values.ix[:(n_test - 1), personality_index], temp))
 
+    predictionBow.append(temp)
+
 ################################################################################
-# MEAN
 
 
 plt.plot(n_trains, resultMean, "yo-", label="mean")
@@ -109,5 +120,18 @@ plt.title('Learning Curve of Personality' + str(personality_index))
 plt.legend(loc='upper right')
 plt.ylabel('mean square error')
 plt.xlabel('number of posts for training')
+
+
+
+
+
+#print "m.s.r treeeKernel - mean with "+ str(n_trains[len(n_trains)-1]) +" of train: "+str((mean_squared_error(treeKernel_predictions.ix[:, 0], x[x.columns[len(n_trains)-1]])))
+
+#print "m.s.r bow - mean with "+ str(n_trains[len(n_trains)-1]) +" of train: "+str((mean_squared_error(temp, x[x.columns[len(n_trains)-1]])))
+
+print "m.s.r treeeKernel - mean with "+ str(n_trains[len(n_trains)-1]) +" of train: "+str(mean_squared_error(predictionTreeKernel, predictionMean))
+
+print "m.s.r bow - mean with "+ str(n_trains[len(n_trains)-1]) +" of train: "+str(mean_squared_error(predictionBow, predictionMean))
+
 
 plt.show()
