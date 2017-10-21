@@ -1,9 +1,7 @@
 bow/tfidfTest.csv
 bow/tfidfTrain.csv
-<<<<<<< HEAD
 dataset/X_train.csv
 dataset/y_train.csv
 dataset/X_test.csv
 dataset/y_test.csv
-=======
->>>>>>> 303e19f85550946e7c054a9150be319d75116019
+
