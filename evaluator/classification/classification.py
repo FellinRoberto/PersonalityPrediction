@@ -6,7 +6,7 @@ for i in range(1,6):
 
             x= float(x)
 
-            if x > 3.5:
+            if x > 2.5:
                 v = 1
             else:
                 v = -1
