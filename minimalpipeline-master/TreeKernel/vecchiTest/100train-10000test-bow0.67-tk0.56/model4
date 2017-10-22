@@ -1,0 +1,118 @@
+SVM-light Version V5.01-TK-1.4.3_smoothing
+5 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+0.4 # kernel parameter -L 
+1 # kernel parameter -T 
+T # kernel parameter -C 
+1 # kernel parameter -F 
+1 # kernel parameter -S 
+0.400000 # kernel parameter -M 
+3 # kernel parameter -N 
+S # kernel parameter -V 
+S # kernel parameter -W 
+ # kernel parameter -G 
+1.000000 # similarity threshold -H 
+1.000000 # terminal factor -X 
+empty # matrix path -P 
+empty # cache path -Z 
+1000000 # cache size -A 
+10000000 # cache max size -B 
+0.500000 # refresh factor -D 
+10 # highest feature index 
+200 # number of training documents 
+91 # number of support vectors plus 1 
+-3.546645 # threshold b, each following line is a SV (starting with alpha*y)
+-1  |BT| (ROOT (S (SBAR (IN (if)))(NP (WDT (that)))(VP (VBD (be)))(NP (DT (a))(NN (epic))(NN (leg))(NN (session)))(NP (PRP (i)))(VP (VBP (do))(RB (not))(VB (know)))(NP (WP (what)))(VP (VBZ (be))))) |ET| 
+-1  |BT| (ROOT (S (NP (VB (inbox)))(VP (PRP (i)))(PP (IN (for)))(NP (DT (the))(NN (numberr)))(PP (IN (of)))(NP (PRP$ (my))(JJ (cellular))(NN (deviceee)))(NP (NNP (bout)))(VP (TO (to))(VB (go))(VB (get)))(NP (NNP (adrienne))(NNP (-lrb-))))) |ET| 
+-1  |BT| (ROOT (S (NP (NN (rearranging)))(PP (IN (of)))(NP (NNS (book)))(VP (JJ (complete))))(S (NP (PRP (i)))(ADVP (RB (really)))(VP (VBP (need)))(NP (DT (another))(NN (bookshelf)))(VP (-LRB- (-lrb-))(CC (or))(RB (maybe)))(NP (CD (five))(-RRB- (-rrb-))(NNP (<))(CD (3))(NNP (matthew))))) |ET| 
+-1  |BT| (ROOT (S (ADVP (RB (almost)))(NP (NNP (friday))))(S (ADVP (JJ (:d)))(NP (PRP (i)))(VP (VBP (<)))(NP (CD (3))(NNP (matthew))(NNS (]))))) |ET| 
+-1  |BT| (ROOT (S (PP (VB (like)))(NP (DT (a))(NN (vacation))))) |ET| 
+1  |BT| (ROOT (S (NP (NNP (te))(NNP (deum)))(NP (PRP (i)))(VP (VBP (loathe)))(NP (JJ (thee))))(S (NP (PRP (i)))(VP (MD ('ll))(VB (like)))(NP (PRP (you)))(PP (IN (after)))(NP (NNP (wednesday))))) |ET| 
+1  |BT| (ROOT (S (ADJP (NN (way)))(VP (TO (to))(VB (go)))(ADVP (NNS (netherland))))) |ET| 
+1  |BT| (ROOT (S (NP (PRP (i)))(VP (VBD (kiss)))(NP (DT (a))(NN (girl))))(S (NP (PRP (it)))(VP (VBD (be)))(NP (NN (ok))))) |ET| 
+1  |BT| (ROOT (S (NP (NNP (reminder)))(NP (DT (some)))(VP (VBP (be)))(ADJP (JJ (big)))(NP (DT (some)))(VP (VBP (be)))(ADJP (JJ (small)))(VP (VB (grope)))(NP (DT (some))(NNS (booby)))(VP (VB (help))(VB (save)))(NP (PRP (they)))(NP (DT (all))))(S (NP (NNP (october)))(NP (NNP (breast))(NNP (cancer))(NNP (awareness))(NNP (month))))(S (VP (NN (support)))(NP (DT (the))(NN (cause))))) |ET| 
+0.928048058907726458599540819705  |BT| (ROOT (S (NP (DT (a))(NN (lightning))(NN (bolt)))(VP (VBZ (generate)))(NP (NNS (temperature)))(NP (CD (five))(NNS (time))(RB (hotter)))(PP (IN (than)))(NP (DT (those)))(VP (VBN (find)))(PP (IN (at)))(NP (DT (the))(NN (sun)))(NP (POS ('s))(NN (surface))))) |ET| 
+-1  |BT| (ROOT (S (VP (VBZ (let)))(NP (DT (the))(NN (sun)))(VP (VB (go)))(ADVP (RP (down)))(PP (IN (on)))(NP (PRP (he))))) |ET| 
+-1  |BT| (ROOT (S (PP (IN (at)))(NP (DT (the))(NN (edge)))(PP (IN (of)))(NP (DT (the))(NN (world)))(PP (IN (by)))(NP (NNP (kataklysm))))) |ET| 
+-0.96845189474411441654666532485862  |BT| (ROOT (S (NP (DT (every))(NN (time)))(NP (PRP (i)))(VP (VBP (be)))(PP (RP (around)))(NP (PRP (i)))(VP (VBP (feel)))(NP (PRP (you)))(VP (VBG (beat)))(NP (NN (heart)))(VP (VBG (go)))(ADVP (JJ (mad)))(NP (WP (what)))(VP (VBZ (be)))(NP (PRP (it)))(PRT (RB (about))))) |ET| 
+1  |BT| (ROOT (S (VP (VBZ (be)))(NP (DT (a))(NN (intellectrical))))) |ET| 
+1  |BT| (ROOT (S (VP (VBZ (be)))(VP (VBG (have)))(NP (JJ (second))(NNS (thought)))(PP (IN (on)))(NP (NN (everything))))) |ET| 
+1  |BT| (ROOT (S (NP (DT (the))(NN (temprature)))(VP (VBZ (be))(RB (really))(VBG (get)))(NP (JJ (high))(DT (this))(NN (time))))) |ET| 
+-0.89612238387517006987792456129682  |BT| (ROOT (S (NP (VB (hmmm)))(VP (WP (what))(TO (to))(VB (do))))) |ET| 
+-0.92613134622503645587698883900885  |BT| (ROOT (S (NP (NNS (butterfly)))(VP (VBP (do))(RB (not))(VB (know)))(NP (DT (the))(NN (color)))(PP (IN (of)))(NP (PRP$ (they))(NNS (wing)))(NP (JJ (human))(NNS (eye)))(VP (VBP (know.likewise)))(NP (PRP (you)))(VP (VBP (do))(RB (not))(VB (know)))(NP (WRB (how))(JJ (good)))(NP (PRP (you)))(VP (VBP (be)))(NP (NNS (other)))(VP (MD (can))(VB (see)))(NP (PRP (you)))(VP (VBP (be)))(ADJP (JJ (special))))) |ET| 
+-0.9284556026825276919822726995335  |BT| (ROOT (S (NP (WP (what)))(VP (VBZ (be)))(NP (NN (creativity))))) |ET| 
+0.93779875880653740249925931493635  |BT| (ROOT (S (NP (NNS (vulture)))(VP (VBP (be))(VBG (wait)))(PP (IN (for)))(NP (NNS (what)))(VP (VBN (leave)))(PP (IN (of)))(NP (PRP (we))))(S (NP (WP (what)))(NP (PRP (they)))(VP (VB (take))))(S (NP (PRP (it)))(ADVP (DT (all)))(VP (VBZ (have)))(NP (DT (no))(NN (worth)))(SBAR (IN (if)))(NP (PRP (we)))(VP (VBP (lose)))(NP (PRP$ (we))(NN (trust))))) |ET| 
+0.91045211468880171690187808053452  |BT| (ROOT (S (PP (IN (for)))(NP (DT (all)))(NP (PRP (you))(VBZ (hater)))(ADVP (IN (out))(RB (there)))(PP (IN (with)))(NP (NNS (apology)))(PP (TO (to)))(NP (NNP (tim))(NNP (tebow)))(NP (NNP (rammer))(NNP (jammer))))) |ET| 
+0.83589054553892672139170372247463  |BT| (ROOT (S (PP (TO (to)))(NP (PRP (i)))(NP (DT (the))(JJS (smartest))(NNS (people)))(VP (VBP (be)))(NP (DT (those)))(NP (WP (who)))(VP (VBP (fight))(, (,))(VB (get)))(NP (VB (beat)))(NP (VB (rise)))(NP (VB (fight)))(ADVP (RB (again))))) |ET| 
+-0.88268273215251502605838140880223  |BT| (ROOT (S (NP (NN (emma))(NNS (rodger)))(VP (VBZ (have))(RB (just))(VBD (fall)))(PP (IN (of)))(NP (PRP$ (she))(NN (chair))(CC (and))(FW (i))(NNP (didnt))(NNP (miss))(NNP (it)))(NP (NNP (d))))) |ET| 
+-0.73505362640776572558110046884394  |BT| (ROOT (S (NP (PRP (i)))(VP (MD ('ll))(VB (be)))(NP (CD (one))(JJ (tough))(NN (act)))(VP (TO (to))(VB (follow))))) |ET| 
+-0.82895800600203251029540751915192  |BT| (ROOT (S (NP (DT (the))(NN (ability)))(VP (TO (to))(VB (stop.reflect))(CC (and))(VB (go)))(NP (`` ("))(JJ (wow))('' (")))(VP (VBZ (be)))(NP (DT (a))(JJ (wise))(NN (characteristic.wow))))(S (NP (VBP (im)))(ADVP (RB (so))(JJ (fortunate))))) |ET| 
+0.87084227047252027453794198663672  |BT| (ROOT (S (NP (VB (put))(PRP$ (you))(NNS (hand)))(PP (IN (in)))(NP (DT (the))(NN (air)))(SBAR (IN (if)))(NP (VBZ (yous))(DT (a))(JJ (true))(NN (player))))) |ET| 
+0.83616630247358980643213044459117  |BT| (ROOT (S (NP (NNS (thing)))(VP (VBP (be)))(NP (WP (what)))(NP (PRP (they)))(VP (VBD (use))(TO (to))(VB (be))(VBG (miss)))(NP (CD (one)))(PP (NN (inside)))(PP (IN (of)))(NP (PRP (i))))) |ET| 
+0.67552163604512105443689051753609  |BT| (ROOT (S (VP (VB (gon))(TO (na))(VB (sit)))(PP (IN (at)))(NP (NN (home))(CC (and))(NN (semus))(VB (relax))))(S (ADVP (RB (possibly)))(VP (VB (go))(TO (to))(NN (gym))(CC (or)))(NP (NN (something)))(UCP (NN (idk))))) |ET| 
+-0.70423429295029416064011229536845  |BT| (ROOT (S (NP (PRP (you)))(VP (VBP (open)))(NP (CD (one))(NN (pack)))(PP (IN (of)))(NP (NN (gum)))(NP (RB (suddenly))(NN (everybody)))(VP (VBZ (become)))(NP (PRP$ (you))(NN (friend))))) |ET| 
+-0.75548700608095187281065818751813  |BT| (ROOT (S (NP (PRP (i)))(VP (VBP (have)))(NP (CD (three))(NN (library))(NN (cards.how))(JJ (many)))(VP (VBP (do)))(NP (PRP (you)))(VP (VB (have))))(S (NP (VB (that)))(NP (WP (what)))(NP (PRP (i)))(VP (VBD (think))))) |ET| 
+-0.649910639644852738960878468788  |BT| (ROOT (S (NP (NNP (epic))(NNP (battle))(NNP (fantasy))(CD (3)))(NP (DT (the))(NN (reason)))(ADVP (WRB (why)))(NP (PRP (i)))(VP (VBP (be))(RB (not))(VBD (finish)))(PP (IN (with)))(NP (PRP$ (my))(NNP (world))(NN (history))(NN (paper))))) |ET| 
+0.69086772847996025248562546039466  |BT| (ROOT (S (VP (VBZ (be)))(ADJP (JJ (ready)))(VP (TO (to))(VB (face)))(NP (PRP$ (my))(CD (10))(NN (hour))(NN (day)))(VP (VBG (lack)))(NP (VB (sleep)))(NP (CD (.2))(NNS (cup)))(PP (IN (of)))(NP (NN (coffee))(VBN (please.and)))(ADVP (RBR (more))(RB (later))))) |ET| 
+0.67876232670487812725923504331149  |BT| (ROOT (S (VP (VB (thank)))(NP (PRP (you)))(ADVP (RB (so))(RB (much)))(PP (TO (to)))(NP (NN (everyone)))(NP (WP (who)))(VP (VBD (send)))(NP (PRP (i))(JJ (wonderful))(NN (birthday))(NNS (wish))))) |ET| 
+0.63583597304005534667226129386108  |BT| (ROOT (S (NP (PRP (i)))(VP (VBP (be))(VBG (work)))(PP (IN (on)))(VP (VBG (make)))(NP (DT (some))(JJ (new))(NN (spin))(CC (and))(NN (boot))(NN (camp))(NN (class)))(VP (NN (cd)))(NP (POS ('s))))(S (NP (DT (any))(NNS (recommendation))))(S (NP (WP (what)))(VP (VBP (be)))(NP (PRP$ (you))(JJ (favorite))(NNS (song)))(ADVP (RB (right))(RB (now))))) |ET| 
+-0.64749640618185155815922371402849  |BT| (ROOT (S (NP (JJ (happy))(NNP (new))(NNS (year)))(PP (TO (to)))(NP (PDT (all))(PRP$ (my))(NNS (friend)))(PP (IN (on)))(NP (NNP (fb))))) |ET| 
+-0.65047630306112347309266397132888  |BT| (ROOT (S (ADVP (RB (not))(RB (really)))(VP (VBG (play)))(NP (DT (the))(NN (game.just)))(VP (VBD (have)))(NP (DT (a))(JJ (special))(NN (request)))(PP (IN (in))))) |ET| 
+-0.61272647826882209454169014861691  |BT| (ROOT (S (VP (VBZ (want)))(PP (TO (to)))(NP (VB (know)))(SBAR (IN (if)))(NP (PRP (you)))(VP (MD (can))(VB (dl)))(NP (JJ (maths)))(PP (JJ (past)))(NP (NN (year))(NNS (papers)))(PP (IN (from)))(NP (NN (cmo))))(S (NP (NNP (cos))(DT (the))(SYM (f))(JJ (**))(NN (king))(NN (thing)))(VP (VBZ (be))(RB (not))(VBG (allow)))(NP (PRP (i)))(VP (TO (to))))) |ET| 
+0.62759771373523010051798109998344  |BT| (ROOT (S (VP (VBZ (be)))(NP (JJ (glad))(NNP (raul))(NNP (sandoval))(NNP (jr)))(VP (VBZ (be))(VBG (come)))(ADVP (RB (home))(NN (tonight))))) |ET| 
+0.49682647271109053876969596785784  |BT| (ROOT (S (NP (JJ (-rrb-)))(NP (NN (today)))(VP (VBD (be)))(NP (NN (fun)))(NP (DT (the))(NN (baby))(NNS (scorp)))(VP (VBD (be)))(NP (JJ (wild))(SYM (:d))))) |ET| 
+0.51051602285489083854486125346739  |BT| (ROOT (S (NP (NNP (black))(CC (and))(NNP (yellow))(NNPS (boys))(CC (and))(NNPS (girls)))(VP (VBD (<)))(NP (CD (3))))) |ET| 
+-0.61251918454278064807283499249024  |BT| (ROOT (S (VP (VBZ (be)))(PP (IN (in)))(NP (JJ (good))(NN (company))))) |ET| 
+-0.51265006943482094303732310436317  |BT| (ROOT (S (NP (EX (there)))(VP (VBZ (be)))(NP (DT (a))(NNP (god))))(S (NP (PRP$ (my))(NN (lab))(NN (exam)))(NP (NN (today)))(PP (IN (in)))(NP (NNP (honors))(NNP (zoo)))(VP (VBG (be))(VBN (count)))(SBAR (IN (as)))(NP (JJ (extra))(NN (credit)))(VP (VBZ (be)))(NP (DT (the))(NN (proof))))) |ET| 
+-0.46887031619680979988018520998594  |BT| (ROOT (S (VP (VBZ (be)))(NP (DT (the))(JJ (only))(NN (person)))(NP (PRP (she)))(VP (VBZ (know)))(NP (WP (who)))(VP (MD (can))(VB (sprain)))(NP (PRP$ (she)))(VP (NN (ankle))(VBG (go)))(PRT (RP (up)))(NP (NNS (stair))))(S (NP (VB (stupid))(JJ (weak))(NNS (ankle))))) |ET| 
+0.58803836245526064363531304479693  |BT| (ROOT (S (NP (VB (dinner)))(PP (IN (with)))(NP (DT (the))(NN (wife))(NNP (:})))(UCP (NNP (kisses))))) |ET| 
+0.56582144574624648747374067170313  |BT| (ROOT (S (NP (NNP (eatin))(NNP (cheese)))(VP (VBG (listen)))(PP (TO (to)))(NP (NNP (music)))(VP (NNP (hangin)))(PP (IN (with)))(NP (NNP (dylan)))(NP (NNP (kailea))))(S (NP (NNP (dci)))(ADVP (RB (here)))(NP (PRP (we)))(VP (VB (come))))) |ET| 
+0.50120518053611773368061221844982  |BT| (ROOT (S (VP (VBZ (have)))(NP (VBN (have))(DT (a))(JJ (brilliant))(NN (afternoon)))(NP (NNS (thanks))(NNP (sue))(CC (and))(NNS (friend)))(NP (NNP (vicky)))(PP (IN (for)))(NP (DT (the))(JJ (cooking))(NN (xx))))) |ET| 
+-0.49997990549507759228120562511322  |BT| (ROOT (S (PP (IN (by)))(NP (NNP (sunday)))(NP (PRP (i)))(VP (MD ('ll))(VB (be)))(PP (IN (in)))(NP (NNS (arkansa)))(NP (NNP (d))))) |ET| 
+-0.65227518522329752670430025318637  |BT| (ROOT (S (NP (NNP (brooklyn)))(PP (IN (for)))(NP (DT (the))(NN (weekend))))) |ET| 
+-0.47115711147843775119525844274904  |BT| (ROOT (S (NP (DT (this))(JJ (new))(NNS (year)))(VP (VBZ (suck))))(S (NP (VB (im)))(PP (IN (by)))(NP (PRP (myself)))(VP (VBG (babysit))(CC (and)))(NP (NN (nobody)))(VP (TO (to))(VB (be)))(PP (IN (with)))(NP (POS ('))(VBG (-lrb-))))) |ET| 
+0.4561092460026768269365504693269  |BT| (ROOT (S (VP (VBG (figure)))(PRT (RP (out)))(NP (NNS (thing)))(PP (IN (for)))(NP (DT (the))(CD (two))(NNS (piece)))(PP (IN (in)))(NP (DT (the))(UH (uh))(JJ (musical))(NN (theatre))(NN (showcase))))) |ET| 
+0.42014799268760300021696707517549  |BT| (ROOT (S (NP (PRP (i)))(VP (VBP (want))(TO (to))(VB (get)))(PP (RP (out)))(PP (IN (of)))(NP (PRP$ (my))(JJ (fucking))(NN (house))))) |ET| 
+0.36578766347857033514046065647563  |BT| (ROOT (S (NP (JJ (shine)))(PP (IN (on)))(NP (PRP (you)))(NP (NNS (people)))(PP (IN (on)))(NP (DT (the))(NN (earth)))(VP (VBP (try))(TO (to))(VB (make)))(NP (PRP (it)))(ADVP (RB (right))))(S (NP (NN (love)))(VP (VBZ (be)))(NP (DT (the))(NN (way))))) |ET| 
+-0.48936084095723975107006253892905  |BT| (ROOT (S (NP (DT (the))(JJS (best))(NN (night)))(VP (VBG (hang)))(PRT (RP (out)))(PP (IN (with)))(NP (PRP$ (my))(NNS (kid))))) |ET| 
+-0.45764185578629890116530987143051  |BT| (ROOT (S (NP (NNP (national))(NN (honor))(NNP (society))(NN (induction))))) |ET| 
+-0.48356196798144907011973714361375  |BT| (ROOT (S (VP (VBZ (be)))(ADJP (RP (off)))(PP (TO (to)))(NP (NN (bed))))(S (NP (DT (this))(NN (week)))(VP (VBZ (have))(VBN (go)))(ADVP (RB (far))(RB (too))(RB (fast))))) |ET| 
+0.36127412756027366125266553353867  |BT| (ROOT (S (NP (`` ("))(NNP (5150))('' (")))(VP (VBZ (be)))(PP (IN (in)))(NP (NN (progress))))(S (NP (NNP (stripes)))(VP (VBP (be))(TO (to))(VB (be))(VBN (paint)))(NP (NN (today)))(PP (IN (after)))(NP (NN (school))))) |ET| 
+0.36318210874992568060193320889084  |BT| (ROOT (S (VP (VBZ (be)))(PP (IN (like)))(NP (DT (this))(CC (and))(IN (like))(DT (that)))(PP (CC (and)))(PP (IN (like)))(NP (DT (this))(CC (and))(NN (a.))))) |ET| 
+0.43896524909341544384844269188761  |BT| (ROOT (S (VP (VBZ (be)))(ADJP (JJ (ready)))(PP (IN (for)))(NP (NN (tonight))))) |ET| 
+-0.29058671983286632478638011889416  |BT| (ROOT (S (NP (NNP (youth))(NNP (convention))))(S (VP (VB (get)))(NP (JJ (ready))(NN (wired)))(PP (IN (for)))(NP (DT (a))(VBN (bless))(NN (time)))(NP (NN (tonight))(CC (and))(NN (tomorrow))))(S (VP (VB (come)))(PP (TO (to)))(NP (NN (convention)))(VP (VBG (expect)))(NP (NNP (god)))(VP (TO (to))(VB (change)))(NP (PRP (you))))) |ET| 
+-0.25705653804202344137053160011419  |BT| (ROOT (S (VP (VBD (have))(RB (quite)))(NP (DT (a))(JJ (nice))(CC (and))(JJ (happy))(NN (day)))(NP (NN (today)))(ADVP (RB (as))(RB (long)))(SBAR (IN (as)))(NP (PRP (she)))(VP (VBD (stay)))(ADVP (RB (inside))))) |ET| 
+-0.27388172748828309988056162183057  |BT| (ROOT (S (NP (NNP (doesnt)))(VP (VBP (know)))(NP (WP (what)))(VP (TO (to))(VB (do))))) |ET| 
+0.39528769169521354998053652707313  |BT| (ROOT (S (NP (NNP (holy))(VBD (shit))))(S (NP (DT (the))(NN (sun))))) |ET| 
+0.40424348735541187904729554247751  |BT| (ROOT (S (VP (VBG (go)))(UCP (TO (to)))(VP (VB (see)))(NP (NN (potter))))) |ET| 
+0.29372257616204133778836649071309  |BT| (ROOT (S (NP (PRP (i)))(VP (VBP (believe)))(NP (PRP (i)))(VP (MD (can))(VB (see)))(NP (DT (the))(NN (future))))(S (SBAR (IN (because)))(NP (PRP (i)))(VP (VB (repeat)))(NP (DT (the))(JJ (same))(NN (routine))))) |ET| 
+-0.25141217822912403923041324560472  |BT| (ROOT (S (NP (PRP (you)))(VP (MD (can))(VB (be)))(NP (DT (the))(NN (apple))))(S (NP (PRP (i)))(VP (MD ('ll))(VB (be)))(NP (DT (the))(NN (pie))))) |ET| 
+-0.14208841452552239958961877164256  |BT| (ROOT (S (NP (`` ("))(WP (what)))(NP (PRP (we)))(VP (VBP (do)))(PP (IN (for)))(NP (PRP (ourselves)))(VP (VBZ (die)))(PP (IN (with)))(NP (PRP (we))))(S (NP (WP (what)))(NP (PRP (we)))(VP (VBP (do)))(PP (IN (for)))(NP (NNS (other)))(NP (DT (the))(NN (world)))(VP (VBZ (remain)))(VP (VBZ (be)))(ADJP (JJ (immortal))))(S (NP (NNP (albert))(NNP (pine))))) |ET| 
+-0.15681406202214021039509361798991  |BT| (ROOT (S (VP (VBZ (be))(VBG (think)))(NP (PRP$ (its))(NN (bed))(NN (time))))) |ET| 
+0.26433889330762877500902163774299  |BT| (ROOT (S (VP (VBG (scream)))(NP (DT (the))(NNS (lyric)))(PP (TO (to)))(NP (NNP (green))(NNP (day)))(VP (VBG (be)))(NP (DT (a))(NN (punk))(NN (rock))(VBP (emo))(JJ (rebel))(NN (demon))))(S (NP (NNP (:d))(NNP (life)))(VP (VBZ (be)))(ADJP (VBN (goooood))))) |ET| 
+0.22479632667978186044699384638079  |BT| (ROOT (S (NP (FW (i))(VBZ (<))(CD (3)))(NP (DT (this))(NN (weather))(NN (thunder))))(S (ADVP (RB (simply))(JJ (lovely))))) |ET| 
+0.25304411770092027911260856853914  |BT| (ROOT (S (ADVP (WRB (how)))(NP (DT (the))(NN (truck)))(VP (VB (be))(VBN (break)))(NP (JJ (again))))) |ET| 
+-0.099873754596849884102027772314614  |BT| (ROOT (S (NP (VB (its))(JJ (good)))(VP (TO (to))(VB (be)))(ADVP (NN (home))))(S (VP (VBG (look)))(ADVP (RB (forward)))(PP (TO (to)))(VP (VBG (see)))(NP (NN (everyone))))) |ET| 
+-0.12736914421457973256579521148524  |BT| (ROOT (S (NP (NNS (thanks)))(VP (VBN (ronald)))(NP (JJ (mcdonalds))(NNS (sport))(NN (program))(NNS (kid)))(VP (VBP (be)))(PP (IN (out)))(PP (IN (of)))(NP (DT (the))(NN (house)))(NP (DT (the))(JJ (whole))(NN (week))(JJ (yipeeee))))) |ET| 
+0.19177861629510400964804262002872  |BT| (ROOT (S (NP (PRP (i)))(VP (VBP (think)))(NP (PRP (i)))(VP (VBD (leave)))(NP (PRP$ (my))(JJ (mobile)))(PP (IN (in)))(NP (NNS (cairn))))(S (ADVP (IN (at))(JJS (least)))(NP (PRP (i)))(VP (VBP (hope)))(NP (FW (i)))(VP (VBD (do)))(NP (NNP (s))))) |ET| 
+0.1961440080037657185396682280043  |BT| (ROOT (S (ADVP (RB (already)))(VP (VBD (get)))(NP (DT (a))(NN (lot)))(VP (VBN (accomplish)))(NP (NN (today))))(S (NP (PRP (i)))(VP (VBP (hope)))(NP (DT (the))(NN (rain)))(VP (VBZ (stop))))) |ET| 
+0.16138467855747717916159444939694  |BT| (ROOT (S (PP (IN (in)))(NP (VBP (love)))(PP (IN (with)))(NP (PRP$ (my))(NN (bundle)))(PP (IN (of)))(NP (NN (joy))))) |ET| 
+-0.088819612620301635619313174174749  |BT| (ROOT (S (NP (FW (i)))(VP (MD (might))(VB (be)))(PP (IN (in)))(NP (DT (the))(NN (salt))(NN (lake))(NN (area)))(NP (DT (this))(NN (weekend.who)))(VP (VBZ (want))(TO (to))(VB (see)))(NP (PRP (i))))) |ET| 
+-0.068641905782504258892728898899804  |BT| (ROOT (S (NP (NNP (goals)))(VP (VBZ (give)))(NP (PRP (you)))(NP (DT (a))(NN (sense)))(VP (TO (to))(VB (perform)))(ADVP (RB (now))(RB (rather)))(PP (IN (than)))(NP (JJ (procrastinating!hehe)))(NP (JJ (cpy))(JJ (frm))(JJ (elaine))(NN (ng))))) |ET| 
+0.11176288271123781259408502819497  |BT| (ROOT (S (NP (DT (the))(JJ (new))(NNP (chanel))(NN (collection)))(VP (VBZ (be)))(ADJP (VBG (fuck))(JJ (awesome))))) |ET| 
+0.10992145548667127397113318920674  |BT| (ROOT (S (VP (VB (take)))(NP (DT (every))(NN (moment)))(NP (PRP (you)))(VP (VBP (know)))(SBAR (IN (that)))(NP (PRP (you)))(VP (VBP (own)))(NP (NN (them.it)))(VP (VBZ (s)))(NP (DT (all)))(NP (PRP (you)))(VP (MD (can))(VB (do))(, (,))(VB (use)))(NP (WP (what)))(VP (VBZ (s))(VBN (be))(VBN (give)))(PP (TO (to)))(NP (VB (you.live)))(PP (IN (like)))(NP (PRP (you)))(VP (VBP (re))(VBG (die))(CC (and))(RB (never))(VB (stop))(VBG (try))))) |ET| 
+0.111065266577833221539606256556  |BT| (ROOT (S (NP (DT (this)))(VP (VBZ (be))(VBG (gon))(TO (na))(VB (be)))(ADJP (PDT (quite)))(NP (DT (the))(NN (weekend))))) |ET| 
+0.10938359317172555162933633710054  |BT| (ROOT (S (NP (RB (just)))(VP (VBD (find)))(PRT (RP (out)))(SBAR (IN (that)))(NP (PRP (i)))(VP (VBP (have))(VBN (be))(VBD (lie)))(PP (TO (to)))(PP (IN (for)))(NP (IN (about))(CD (3))(NNS (week)))(ADVP (RB (now))))(S (NP (PRP (i)))(VP (VBP (be))(JJ (pissed)))(NP (PRP (i)))(VP (VBP (be))(VBG (go))(TO (to))(VB (take)))(NP (DT (some))(NN (action)))(ADVP (NN (tonight))))(S (NP (NN (nothing))(PRP (i)))(VP (MD (can))(RB (not))(VB (stand)))(ADVP (JJR (more)))(PP (IN (than)))(NP (DT (a))(NN (liar))))(S (NP (NNP (god)))(VP (VBP (please))(VB (show)))(NP (DT (this))(NN (person)))(NP (DT (some))(NN (truth)))(PP (IN (in)))(NP (PRP$ (they))(NN (life))))) |ET| 
+0.092291189476457632934192076845648  |BT| (ROOT (S (NP (PRP (we)))(VP (VBP (have)))(NP (DT (the))(NN (right)))(VP (TO (to))(VB (lie)))(PP (IN (about)))(NP (DT (the))(NN (heart)))(PP (IN (of)))(NP (DT (the))(NN (matter))))) |ET| 
+0.081276111090715655316252252760023  |BT| (ROOT (S (ADVP (WRB (why)))(VP (VBZ (be))(VBG (streak)))(NP (RB (so))(JJ (much))(NN (fun))))) |ET| 
+-0.043729926206076491501661962502112  |BT| (ROOT (S (VP (VBG (wonder)))(ADVP (WRB (why)))(NP (NN (everyone)))(VP (VBZ (have)))(NP (NNS (color)))(PP (IN (as)))(NP (PRP$ (they))(NN (status))))(S (NP (MD (will))(NN (someone)))(VP (VB (please))(VB (explain)))(NP (DT (this)))(PP (TO (to)))(NP (PRP (i))))) |ET| 
+0.028033117538028631821056535500247  |BT| (ROOT (S (NP (EX (there)))(VP (VBP (be)))(NP (DT (no))(JJ (stupid))(NNS (question))))(S (NP (RB (just))(JJ (stupid))(NNS (people))))) |ET| 
+-0.026605586134719284852057086254717  |BT| (ROOT (S (ADVP (RB (just)))(VP (VBD (get)))(NP (DT (a))(NN (shot))))(S (SBAR (RB (=[)))(NP (PRP (it)))(VP (VBD (hurt))))(S (NP (DT (the))(NN (lady)))(VP (VBD (say)))(NP (PRP$ (my))(NN (muscle)))(VP (VBD (start))(TO (to))(VB (spasm)))(NP (NN (haha))))) |ET| 
+-0.020337303956069828492214668358429  |BT| (ROOT (S (NP (CD (five))(NNS (hour)))(PP (IN (of)))(NP (NNP (paaaaaaaaiiiiiiin))))(S (NP (PRP (it)))(VP (MD (can))(RB (only))(VB (be))(VBN (cure)))(PP (IN (by)))(NP (JJR (more))(NNP (red))(NNP (vs))(NNP (blue))))) |ET| 
+-0.021982317258145117611078944719338  |BT| (ROOT (S (NP (DT (the))(NN (soul)))(VP (VBZ (weigh)))(NP (CD (3/4)))(PP (IN (of)))(NP (DT (a))(NN (ounce))))) |ET| 
+-0.013620961916731766025434602340738  |BT| (ROOT (S (NP (PRP (it)))(VP (VBZ (make)))(NP (PRP (i)))(ADVP (RB (really)))(NP (JJ (sad))(CC (and))(JJ (angry)))(ADVP (WRB (when)))(NP (NNS (people)))(VP (VBP (decide))(TO (to))(VB (declaw)))(NP (PRP$ (they))(NNS (cat))))) |ET| 
+-0.0071080043802345949099930066950037  |BT| (ROOT (S (NP (PRP (it)))(VP (VBZ (be)))(NP (DT (a))(JJ (great))(NN (day)))(ADVP (WRB (when)))(NP (DT (both)))(NP (PRP (you)))(NP (NNS (cookie)))(VP (VBP (be))(VBG (get))(JJ (baked)))(ADJP (CD (<)))(LST (CD (3))))) |ET| 

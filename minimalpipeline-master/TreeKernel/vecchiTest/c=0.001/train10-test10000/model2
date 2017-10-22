@@ -1,0 +1,38 @@
+SVM-light Version V5.01-TK-1.4.3_smoothing
+5 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+0.4 # kernel parameter -L 
+1 # kernel parameter -T 
+T # kernel parameter -C 
+1 # kernel parameter -F 
+1 # kernel parameter -S 
+0.400000 # kernel parameter -M 
+3 # kernel parameter -N 
+S # kernel parameter -V 
+S # kernel parameter -W 
+ # kernel parameter -G 
+1.000000 # similarity threshold -H 
+1.000000 # terminal factor -X 
+empty # matrix path -P 
+empty # cache path -Z 
+1000000 # cache size -A 
+10000000 # cache max size -B 
+0.500000 # refresh factor -D 
+10 # highest feature index 
+20 # number of training documents 
+11 # number of support vectors plus 1 
+-3.7501086 # threshold b, each following line is a SV (starting with alpha*y)
+-0.0010000000000000000208166817117217  |BT| (ROOT (S (NP (PRP (i)))(VP (VBP (have)))(NP (CD (three))(NN (library))(NN (cards.how))(JJ (many)))(VP (VBP (do)))(NP (PRP (you)))(VP (VB (have))))(S (NP (VB (that)))(NP (WP (what)))(NP (PRP (i)))(VP (VBD (think))))) |ET| 
+0.0010000000000000000208166817117217  |BT| (ROOT (S (NP (NNP (youth))(NNP (convention))))(S (VP (VB (get)))(NP (JJ (ready))(NN (wired)))(PP (IN (for)))(NP (DT (a))(VBN (bless))(NN (time)))(NP (NN (tonight))(CC (and))(NN (tomorrow))))(S (VP (VB (come)))(PP (TO (to)))(NP (NN (convention)))(VP (VBG (expect)))(NP (NNP (god)))(VP (TO (to))(VB (change)))(NP (PRP (you))))) |ET| 
+-0.0010000000000000000208166817117217  |BT| (ROOT (S (VP (VB (gon))(TO (na))(VB (sit)))(PP (IN (at)))(NP (NN (home))(CC (and))(NN (semus))(VB (relax))))(S (ADVP (RB (possibly)))(VP (VB (go))(TO (to))(NN (gym))(CC (or)))(NP (NN (something)))(UCP (NN (idk))))) |ET| 
+0.0010000000000000000208166817117217  |BT| (ROOT (S (VP (VBG (go)))(UCP (TO (to)))(VP (VB (see)))(NP (NN (potter))))) |ET| 
+-0.0010000000000000000208166817117217  |BT| (ROOT (S (NP (PRP (you)))(VP (VBP (open)))(NP (CD (one))(NN (pack)))(PP (IN (of)))(NP (NN (gum)))(NP (RB (suddenly))(NN (everybody)))(VP (VBZ (become)))(NP (PRP$ (you))(NN (friend))))) |ET| 
+0.0010000000000000000208166817117217  |BT| (ROOT (S (VP (VBG (scream)))(NP (DT (the))(NNS (lyric)))(PP (TO (to)))(NP (NNP (green))(NNP (day)))(VP (VBG (be)))(NP (DT (a))(NN (punk))(NN (rock))(VBP (emo))(JJ (rebel))(NN (demon))))(S (NP (NNP (:d))(NNP (life)))(VP (VBZ (be)))(ADJP (VBN (goooood))))) |ET| 
+-0.0010000000000000000208166817117217  |BT| (ROOT (S (ADVP (RB (just)))(VP (VBD (get)))(NP (DT (a))(NN (shot))))(S (SBAR (RB (=[)))(NP (PRP (it)))(VP (VBD (hurt))))(S (NP (DT (the))(NN (lady)))(VP (VBD (say)))(NP (PRP$ (my))(NN (muscle)))(VP (VBD (start))(TO (to))(VB (spasm)))(NP (NN (haha))))) |ET| 
+0.0010000000000000000208166817117217  |BT| (ROOT (S (SBAR (IN (if)))(NP (WDT (that)))(VP (VBD (be)))(NP (DT (a))(NN (epic))(NN (leg))(NN (session)))(NP (PRP (i)))(VP (VBP (do))(RB (not))(VB (know)))(NP (WP (what)))(VP (VBZ (be))))) |ET| 
+-0.0010000000000000000208166817117217  |BT| (ROOT (S (NP (RB (dear))(VBD (ib)))(VP (VB (please))(VB (go)))(ADVP (RP (away))))(S (VP (VB (thank)))(NP (PRP (you)))(ADVP (RB (kindly))))) |ET| 
+0.0010000000000000000208166817117217  |BT| (ROOT (S (NP (NNS (thing)))(VP (VBP (be)))(NP (WP (what)))(NP (PRP (they)))(VP (VBD (use))(TO (to))(VB (be))(VBG (miss)))(NP (CD (one)))(PP (NN (inside)))(PP (IN (of)))(NP (PRP (i))))) |ET| 

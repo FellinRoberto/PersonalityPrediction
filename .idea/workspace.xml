@@ -2,8 +2,535 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8f9c15f-b15b-4843-b9c8-57f4b92ba764" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/10000train-10000test-bow0.55-tk0.56/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/100train-10000test-bow0.67-tk0.56/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/20000train-10000test-bow0.55-tk0.56/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/2000train-10000test-bow0.57-tk0.56/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/50000train-10000test-bow0.54-tk0.56/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/5000train-10000test-bow0.56-tk0.56/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/500train-10000test-bow 0.63-tk0.56/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/PersonalitiesTogether.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/Personality0_(openness).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/Personality1_(conscientiousness).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/Personality2_(extraversion).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/Personality3_(agreeableness).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/Personality4_(neuroticism).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train10-test10000/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train100-test10000/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train1000-test10000/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train2000-test10000/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train4000-test10000/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/model1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/model2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/model3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/model4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/model5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/output1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/output2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/output3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/output4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/output5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/test5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train1C.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train1b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train2b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train3b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train4b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/train5b.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/x_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/x_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/y_testNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/train500-test10000/y_trainNew.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/wrongPersonality0.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/wrongPersonality1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/wrongPersonality2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/wrongPersonality3.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/c=0.001/wrongPersonality4.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/learningCurveRegression.pdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/classification.py" afterPath="$PROJECT_DIR$/evaluator/classification/classification.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/evaluatorClassification.py" afterPath="$PROJECT_DIR$/evaluator/classification/evaluatorClassification.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/log.txt" afterPath="$PROJECT_DIR$/evaluator/classification/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/model1" afterPath="$PROJECT_DIR$/evaluator/classification/model1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/model2" afterPath="$PROJECT_DIR$/evaluator/classification/model2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/model3" afterPath="$PROJECT_DIR$/evaluator/classification/model3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/model4" afterPath="$PROJECT_DIR$/evaluator/classification/model4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/model5" afterPath="$PROJECT_DIR$/evaluator/classification/model5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/output1.txt" afterPath="$PROJECT_DIR$/evaluator/classification/output1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/output2.txt" afterPath="$PROJECT_DIR$/evaluator/classification/output2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/output3.txt" afterPath="$PROJECT_DIR$/evaluator/classification/output3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/output4.txt" afterPath="$PROJECT_DIR$/evaluator/classification/output4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/output5.txt" afterPath="$PROJECT_DIR$/evaluator/classification/output5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test1C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test1C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test1b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test1b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test2C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test2C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test2b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test2b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test3C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test3C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test3b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test3b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test4C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test4C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test4b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test4b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test5C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test5C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/test5b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/test5b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train1C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train1C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train1b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train1b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train2C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train2C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train2b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train2b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train3C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train3C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train3b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train3b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train4C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train4C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train4b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train4b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train5C.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train5C.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/classification/train5b.dat" afterPath="$PROJECT_DIR$/evaluator/classification/train5b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test1.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test2.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test2.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test3.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test3.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test4.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test4.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test5.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/test5.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train1.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train2.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train2.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train3.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train3.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train4.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train4.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train5.dat" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/train5.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/x_testNew.csv" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/x_testNew.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/x_trainNew.csv" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/x_trainNew.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/y_testNew.csv" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/y_testNew.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/y_trainNew.csv" afterPath="$PROJECT_DIR$/minimalpipeline-master/TreeKernel/y_trainNew.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minimalpipeline-master/src/test/java/qa/qcri/qf/tutorial/PersonalityPrediction.java" afterPath="$PROJECT_DIR$/minimalpipeline-master/src/test/java/qa/qcri/qf/tutorial/PersonalityPrediction.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,8 +540,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PersonalityPrediction$evaluatorClassification.coverage" NAME="evaluatorClassification Coverage Results" MODIFIED="1508587452612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluator/classification" />
-    <SUITE FILE_PATH="coverage/PersonalityPrediction$classification.coverage" NAME="classification Coverage Results" MODIFIED="1508586786739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluator/classification" />
+    <SUITE FILE_PATH="coverage/PersonalityPrediction$evaluatorClassification.coverage" NAME="evaluatorClassification Coverage Results" MODIFIED="1508662481871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluator/classification" />
+    <SUITE FILE_PATH="coverage/PersonalityPrediction$classification.coverage" NAME="classification Coverage Results" MODIFIED="1508662459390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluator/classification" />
     <SUITE FILE_PATH="coverage/PersonalityPrediction$learningCurveWithAll.coverage" NAME="learningCurveWithAll Coverage Results" MODIFIED="1507819625500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluator" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -23,28 +550,28 @@
       <file leaf-file-name="classification.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluator/classification/classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learningCurveWithAll.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="learningCurveWithAll.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluator/classification/learningCurveWithAll.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-810">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaluatorClassification.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="evaluatorClassification.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/evaluator/classification/evaluatorClassification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
-              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -71,7 +598,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
+    <option name="x" value="1424" />
     <option name="y" value="-779" />
     <option name="width" value="1309" />
     <option name="height" value="780" />
@@ -94,7 +621,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -123,7 +650,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +902,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="-779" width="1309" height="780" extended-state="6" />
+    <frame x="1424" y="-779" width="1309" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -384,7 +911,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.877429" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.65620327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -410,13 +937,27 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/evaluator/learningCurveWithAll.py">
+    <entry file="file://$PROJECT_DIR$/evaluator/classification/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/classification/learningCurveWithAll.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/classification/evaluatorClassification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -424,9 +965,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/learningCurveWithAll.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -434,32 +979,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="45" column="76" lean-forward="false" selection-start-line="45" selection-start-column="76" selection-end-line="45" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/classification/learningCurveWithAll.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/classification/classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/classification/evaluatorClassification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluator/classification/learningCurveWithAll.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
