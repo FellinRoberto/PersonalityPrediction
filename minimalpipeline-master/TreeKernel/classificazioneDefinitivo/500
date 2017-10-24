@@ -1,0 +1,164 @@
+/usr/bin/python2.7 /home/roberto/DISCO/UNIVERSITA/MAGISTRALE/ANL/PersonalityPrediction/evaluator/classificazioneDefinitivo/evaluatorClassification.py
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (500 examples read)
+
+Number of examples: 500, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Optimizing......................................................................................................................................................................................................................................................................done. (263 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.99
+Number of SV: 500 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=9.93322
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=99.66894
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+XiAlpha-estimate of the error: error<=5.20% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>100.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>94.80% (rho=1.00,depth=0)
+Number of kernel evaluations: 146160
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (500 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..done
+Runtime (without IO) in cpu-seconds: 18.70
+Accuracy on test set: 95.62% (4781 correct, 219 incorrect, 5000 total)
+Precision/recall on test set: 95.62%/100.00%
+F1-measure on test set: 97.76%
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (500 examples read)
+
+Number of examples: 500, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Optimizing...............................................................................................................................................................................................................................................................done. (256 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 1.56
+Number of SV: 500 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=14.84551
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=221.38904
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+XiAlpha-estimate of the error: error<=12.60% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>100.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>87.40% (rho=1.00,depth=0)
+Number of kernel evaluations: 145775
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (500 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..done
+Runtime (without IO) in cpu-seconds: 19.50
+Accuracy on test set: 88.12% (4406 correct, 594 incorrect, 5000 total)
+Precision/recall on test set: 88.12%/100.00%
+F1-measure on test set: 93.68%
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (500 examples read)
+
+Number of examples: 500, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Optimizing......................................................................................................................................................................................................................................................done. (247 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00089).
+Runtime in cpu-seconds: 0.96
+Number of SV: 500 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=16.31331
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=267.12397
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=15.80% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>100.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>84.20% (rho=1.00,depth=0)
+Number of kernel evaluations: 145280
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (500 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..done
+Runtime (without IO) in cpu-seconds: 19.62
+Accuracy on test set: 86.62% (4331 correct, 669 incorrect, 5000 total)
+Precision/recall on test set: 86.62%/100.00%
+F1-measure on test set: 92.83%
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (500 examples read)
+
+Number of examples: 500, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Optimizing..............................................................................................................................................................................................................................................................................done. (271 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00097).
+Runtime in cpu-seconds: 1.16
+Number of SV: 500 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=12.54506
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=158.37852
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=8.60% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>100.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>91.40% (rho=1.00,depth=0)
+Number of kernel evaluations: 146600
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (500 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..done
+Runtime (without IO) in cpu-seconds: 19.96
+Accuracy on test set: 90.62% (4531 correct, 469 incorrect, 5000 total)
+Precision/recall on test set: 90.62%/100.00%
+F1-measure on test set: 95.08%
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (500 examples read)
+
+Number of examples: 500, linear space size: 10
+
+learn_parm.type=1
+estimating ...
+estimation done
+Optimizing........................................................................................................................................................................................................................................................................................done. (281 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00098).
+Runtime in cpu-seconds: 1.43
+Number of SV: 500 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=22.30277
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=498.41356
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+XiAlpha-estimate of the error: error<=46.40% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>99.63% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>53.71% (rho=1.00,depth=0)
+Number of kernel evaluations: 147150
+Writing model file...done
+
+LEGGO IL MODELLO
+Reading model...OK. (500 support vectors read)
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..2900..3000..3100..3200..3300..3400..3500..3600..3700..3800..3900..4000..4100..4200..4300..4400..4500..4600..4700..4800..4900..5000..done
+Runtime (without IO) in cpu-seconds: 19.98
+Accuracy on test set: 55.02% (2751 correct, 2249 incorrect, 5000 total)
+Precision/recall on test set: 55.07%/99.71%
+F1-measure on test set: 70.95%
+
+
+Process finished with exit code 0
+
