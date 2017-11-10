@@ -14,10 +14,10 @@ true_valuesNew = pd.read_csv('./../minimalpipeline-master/TreeKernel/y_testNew.c
 matrix = pd.read_csv('./../minimalpipeline-master/TreeKernel/y_trainNew.csv', engine='c',header=None)
 
 
-personality_index = 3
-n_trains = [50, 100, 500, 1000, 2000]
+personality_index = 4
+n_trains = [100, 500, 1000, 2000, 5000]
 
-n_test = 1000
+n_test = 5000
 
 predictionMean = []
 predictionTreeKernel = []
@@ -40,7 +40,7 @@ for i in range(0,len(n_trains)):
     x = x.mean()
     x = pd.DataFrame(x)
     x = x.transpose()
-    print x
+    #print x
     x = pd.concat([x] * n_test)
     predictionMean.append(x[x.columns[personality_index]])
     resultMean.append(mean_squared_error(true_valuesNew.ix[:(n_test - 1), personality_index], x[x.columns[personality_index]]))
@@ -56,7 +56,7 @@ for i in range(0, len(n_trains)):
     os.system("head -" + str(n_test) + " ../minimalpipeline-master/TreeKernel/test" + str(
         personality_index + 1) + ".dat > ../minimalpipeline-master/TreeKernel/test" + str(
         personality_index + 1) + "b.dat")
-    f = os.popen("../svm/src/svm_learn -t 5 -c 10 -C T -F 3 -z r  ../minimalpipeline-master/TreeKernel/train" + str(
+    f = os.popen("../svm/src/svm_learn -t 5 -C T -z r  ../minimalpipeline-master/TreeKernel/train" + str(
         personality_index + 1) + "b.dat model" + str(personality_index + 1))
     print f.read()
     os.popen("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test" + str(
@@ -108,18 +108,22 @@ for i in range(0, len(n_trains)):
 ################################################################################
 
 
-plt.plot(n_trains, resultMean, "yo-", label="mean")
+plt.plot(n_trains, resultMean, "yo-", label="Mean")
 
-plt.plot(n_trains, results_bow, "go-", label="bow")
-plt.plot(n_trains, results_bow_wrong, "co-", label="bowWrong")
+plt.plot(n_trains, results_bow, "go-", label="BOW")
+#plt.plot(n_trains, results_bow_wrong, "co-", label="bowWrong")
 
-plt.plot(n_trains, results, 'bo-', label="treeKernel")
-plt.plot(n_trains, results_wrong, 'ro-', label="wrongTreeKernel")
+plt.plot(n_trains, results, 'bo-', label="SVM - TreeKernel")#, alpha=0.3)
+#plt.plot(n_trains, results_wrong, 'ro-', label="wrongTreeKernel")
 
-plt.title('Learning Curve of Personality' + str(personality_index))
+#plt.title('Learning Curve of Personality' + str(personality_index))
+plt.title('Learning Curve Neuroticism')
+plt.yticks(np.arange(round(np.amin(resultMean) - 0.05, 1 ), round (np.amax(results_bow) + 0.05, 1), 0.05))
+#plt.yticks(np.arange(0.4, 1, 0.05))
+
 plt.legend(loc='upper right')
 plt.ylabel('mean square error')
-plt.xlabel('number of posts for training')
+plt.xlabel('number of samples for training')
 
 
 

@@ -14,15 +14,10 @@ bow_predictions=pd.read_csv('./../bow/bowPrediction.csv', engine='c', header=Non
 true_valuesNew = pd.read_csv('./../minimalpipeline-master/TreeKernel/y_testNew.csv', engine='c',header=None)
 #true_values = pd.read_csv('../dataset/y_test.csv', engine='c')
 
-<<<<<<< HEAD
-personality_index = 3
-n_trains =[50, 100, 500]
-n_test = 1000
-=======
 personality_index = 0
 n_trains =[100, 500,1000,2000,4000, 10000]
 n_test = 5000
->>>>>>> 303e19f85550946e7c054a9150be319d75116019
+
 results=[]
 results_wrong=[]
 results_bow=[]
@@ -38,11 +33,8 @@ for i in range(0,len(n_trains)):
 
 	os.system("head -" + str(n_train) + " ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1) + ".dat > ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1) + "b.dat")
 	os.system("head -" + str(n_test) + " ../minimalpipeline-master/TreeKernel/test" + str(personality_index+1) + ".dat > ../minimalpipeline-master/TreeKernel/test" + str(personality_index+1) + "b.dat")
-<<<<<<< HEAD
+
 	f=os.popen("../svm/src/svm_learn -t 5 -c 1 -C T -F 1 -z r  ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1)  + "b.dat model"+str(personality_index+1) )
-=======
-	f=os.popen("../svm/src/svm_learn -t 5 -c 1 -C T -z r  ../minimalpipeline-master/TreeKernel/train" + str(personality_index+1)  + "b.dat model"+str(personality_index+1) )
->>>>>>> 303e19f85550946e7c054a9150be319d75116019
 	print f.read()
 	os.popen("../svm/src/svm_classify  ../minimalpipeline-master/TreeKernel/test" + str(personality_index+1) + "b.dat model"+str(personality_index+1)+" output"+str(personality_index+1)+".txt")
 
